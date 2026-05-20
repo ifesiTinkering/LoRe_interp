@@ -16,8 +16,6 @@ import requests
 import random
 
 import sys
-from IPython.core import ultratb
-sys.excepthook = ultratb.FormattedTB(call_pdb=1)
 
 # Create data/prism directory if it doesn't exist
 import os
