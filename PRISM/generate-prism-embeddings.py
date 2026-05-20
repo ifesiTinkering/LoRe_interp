@@ -105,6 +105,16 @@ if __name__ == "__main__":
     device = "cuda:0"
     model_name = "Skywork/Skywork-Reward-Llama-3.1-8B-v0.2"
 
+    # --- Auto-run prepare.py if the parquet files are missing.
+    # Lets `python generate-prism-embeddings.py` work as a one-shot driver
+    # whether or not prepare.py has already been run in this session.
+    import subprocess
+    if not (os.path.exists("data/prism/train.parquet") and os.path.exists("data/prism/test.parquet")):
+        print("PRISM parquets missing — running prepare.py first...")
+        subprocess.run(["python", "prepare.py"], check=True)
+    else:
+        print("PRISM parquets present, skipping prepare.py")
+
     # --- Load model and tokenizer ---
     model = AutoModel.from_pretrained(
         model_name,
