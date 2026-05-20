@@ -60,7 +60,12 @@ def generate_prism_embeddings(
             chosen_conv,
             tokenize=True,
             return_tensors="pt"
-        ).to(device)
+        )
+        # Newer transformers (>=4.50) returns a BatchEncoding from apply_chat_template
+        # instead of a Tensor. Normalize to Tensor so model(tokenized) works on both.
+        if not isinstance(tokenized, torch.Tensor):
+            tokenized = tokenized["input_ids"]
+        tokenized = tokenized.to(device)
 
         with torch.no_grad():
             output = model(tokenized)
@@ -73,7 +78,12 @@ def generate_prism_embeddings(
             rejected_conv,
             tokenize=True,
             return_tensors="pt"
-        ).to(device)
+        )
+        # Newer transformers (>=4.50) returns a BatchEncoding from apply_chat_template
+        # instead of a Tensor. Normalize to Tensor so model(tokenized) works on both.
+        if not isinstance(tokenized, torch.Tensor):
+            tokenized = tokenized["input_ids"]
+        tokenized = tokenized.to(device)
 
         with torch.no_grad():
             output = model(tokenized)
