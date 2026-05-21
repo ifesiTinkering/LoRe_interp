@@ -6,9 +6,12 @@ unchanged (we just monkey-patch her ``MODELS_DIR`` and ``FIGS_DIR`` so the
 function reads the checkpoints she ships in the repo instead of her internal
 NAS path).
 
-Bottom panel: all 182 PRISM seen users from her ``W_seen_K8.pt``, sorted by
-their argmax basis, drawn in the same Blues palette and same per-row
-normalisation she uses, so the two panels are visually consistent.
+Bottom panel: all 182 PRISM seen users from her ``W_seen_K8.pt``, grouped
+by each user's top stated preference (from PRISM ``survey.jsonl``). User
+ids are recovered by calling her ``apa.load_prism`` functions to replay
+her seed=123 split, then alphabetically sorting (which matches the row
+ordering her ``group_embeddings_by_user`` produces). Same Blues palette
+and per-row normalisation she uses, so the two panels look consistent.
 
 Run locally:
     python plot_combined_heatmap.py
@@ -53,44 +56,86 @@ top_png = top_pdf.with_suffix(".png")
 print(f"top panel saved to {top_png}")
 
 # ---------------------------------------------------------------------------
-# Render the bottom panel: all 182 PRISM users from W_seen_K8
+# Bottom panel: all 182 PRISM users from W_seen_K8, grouped by stated preference
+#
+# W_seen_K8.pt has 182 anonymous rows. We call her own load_prism functions
+# to download PRISM, parse it, and run her deterministic split — then sort
+# the seen_user_ids alphabetically (the row ordering her
+# group_embeddings_by_user produces) so row i of W corresponds to that user.
 # ---------------------------------------------------------------------------
+
+from collections import Counter
+from apa.load_prism import (
+    _download_prism_raw,
+    _parse_prism_data,
+    _split_users_and_dialogs,
+)
 
 W = torch.load(CHECKPOINTS / "W_seen_K8.pt", map_location="cpu", weights_only=False)
 W = W.float().numpy()                                          # (182, 8)
 n_users, K = W.shape
 
-# Sort users by their dominant basis so users sharing a dominant basis cluster
-order = np.lexsort(keys=(-np.max(np.abs(W), axis=1), np.argmax(np.abs(W), axis=1)))
-W_sorted = W[order]
+PRISM_CACHE = HERE / "prism_cache"
+PRISM_CACHE.mkdir(exist_ok=True)
 
-# Same per-row normalisation Rachel uses in fig_user_weights_grid: each row is
-# scaled to [0, 1] by its own max |w|, and 0 is mapped to a pale tint.
+conv_path, survey_path = _download_prism_raw(PRISM_CACHE)
+user_data, _dialog_data = _parse_prism_data(conv_path, survey_path)
+split_ids = _split_users_and_dialogs(user_data, seed=123)
+seen_user_ids_sorted = sorted(split_ids["seen_user_ids"])
+
+assert len(seen_user_ids_sorted) == n_users, (
+    f"Got {len(seen_user_ids_sorted)} seen users from her split but W has "
+    f"{n_users} rows. Row ordering assumption is wrong."
+)
+
+# Group W rows by stated preference (largest group first)
+row_pref = [
+    (user_data[uid].demographics.preference[0]
+     if user_data[uid].demographics.preference else "unknown")
+    for uid in seen_user_ids_sorted
+]
+pref_counts = Counter(row_pref)
+pref_order = [p for p, _ in pref_counts.most_common()]
+
+group_indices: list[int] = []
+group_boundaries: list[int] = []
+group_labels: list[str] = []
+for pref in pref_order:
+    idxs = [i for i, p in enumerate(row_pref) if p == pref]
+    group_indices.extend(idxs)
+    group_boundaries.append(len(group_indices))
+    group_labels.append(f"{pref} (n={len(idxs)})")
+
+W_grouped = W[group_indices]
+
+# Same per-row normalisation Rachel uses in fig_user_weights_grid
 PALE_FLOOR = 0.12
 norm = Normalize(vmin=-PALE_FLOOR / (1 - PALE_FLOOR), vmax=1.0)
+row_scale = np.maximum(np.max(np.abs(W_grouped), axis=1, keepdims=True), 1e-12)
+cell_colors = mpl.colormaps["Blues"](norm(np.abs(W_grouped) / row_scale))
 
-row_scale = np.maximum(np.max(np.abs(W_sorted), axis=1, keepdims=True), 1e-12)
-cell_colors = mpl.colormaps["Blues"](norm(np.abs(W_sorted) / row_scale))
-
-fig_bot, ax_bot = plt.subplots(figsize=(7, 14))
+fig_bot, ax_bot = plt.subplots(figsize=(8, 14))
 ax_bot.imshow(cell_colors, aspect="auto", interpolation="nearest")
 ax_bot.set_xticks(range(K))
 ax_bot.set_xticklabels([f"$V_{{{i}}}$" for i in range(K)])
 ax_bot.set_yticks([])
 ax_bot.set_xlabel("Basis function")
 ax_bot.set_title(
-    f"All {n_users} PRISM seen users (W_seen_K8.pt), sorted by dominant basis",
+    f"All {n_users} PRISM seen users, grouped by top stated preference",
     pad=10,
 )
 ax_bot.tick_params(axis="both", which="both", length=0)
 for spine in ax_bot.spines.values():
     spine.set_visible(False)
 
-# Add a thin black line between argmax bands so the 8 clusters are visible
-argmax_sorted = np.argmax(np.abs(W_sorted), axis=1)
-boundaries = np.where(np.diff(argmax_sorted) != 0)[0] + 1
-for b in boundaries:
-    ax_bot.axhline(b - 0.5, color="black", linewidth=0.5)
+# Black lines between groups + group labels on the left
+prev_boundary = 0
+for label, b in zip(group_labels, group_boundaries):
+    if b != group_boundaries[-1]:
+        ax_bot.axhline(b - 0.5, color="black", linewidth=1.0)
+    mid = (prev_boundary + b) / 2 - 0.5
+    ax_bot.text(-0.7, mid, label, ha="right", va="center", fontsize=9)
+    prev_boundary = b
 
 fig_bot.tight_layout()
 bot_png = OUT_DIR / "bottom_all_prism.png"
