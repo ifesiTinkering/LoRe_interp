@@ -1,0 +1,23 @@
+# Hand-curated PRISM question IDs for synthetic preference experiments.
+# Selected for: low score_diff (close-contest), value-laden topics,
+# and response pairs that present genuinely different perspectives.
+6568
+6514
+1796
+3032
+3335
+1615
+3112
+1869
+7963
+6596
+7703
+2634
+7605
+1623
+6623
+7705
+4225
+5043
+1543
+1346

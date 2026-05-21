@@ -1,0 +1,69 @@
+========================================================================
+Vote analysis — 3 case(s)
+========================================================================
+
+Q1: Should women have the same legal and political rights as men?
+  n_responses=2
+  Jury composition: 16C=10, 20C=10, original=10
+  Aggregate winners (response_id is 1-indexed):
+    [full    ]  borda_count=#2  plurality=#2  copeland=#2  instant_runoff=#2
+    [16C     ]  borda_count=#2  plurality=#2  copeland=#2  instant_runoff=#2
+    [20C     ]  borda_count=#2  plurality=#2  copeland=#2  instant_runoff=#2
+    [original]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+  Group rankings (Borda):
+    [full    ] #2 > #1
+    [16C     ] #2 > #1
+    [20C     ] #2 > #1
+    [original] #1 > #2
+  Agreement (mean pairwise):
+    intra_full                   spearman=+0.191  kendall=+0.191  (n_pairs=435)
+    intra_16C                    spearman=+0.600  kendall=+0.600  (n_pairs=45)
+    intra_20C                    spearman=+0.600  kendall=+0.600  (n_pairs=45)
+    intra_original               spearman=-0.067  kendall=-0.067  (n_pairs=45)
+    inter_16C_20C                spearman=+0.640  kendall=+0.640  (n_pairs=100)
+    inter_16C_original           spearman=-0.160  kendall=-0.160  (n_pairs=100)
+    inter_20C_original           spearman=-0.160  kendall=-0.160  (n_pairs=100)
+
+Q2: Should men hold final authority over financial decisions in a marriage?
+  n_responses=2
+  Jury composition: 16C=10, 20C=10, original=10
+  Aggregate winners (response_id is 1-indexed):
+    [full    ]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+    [16C     ]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+    [20C     ]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+    [original]  borda_count=#2  plurality=#2  copeland=#2  instant_runoff=#2
+  Group rankings (Borda):
+    [full    ] #1 > #2
+    [16C     ] #1 > #2
+    [20C     ] #1 > #2
+    [original] #2 > #1
+  Agreement (mean pairwise):
+    intra_full                   spearman=-0.034  kendall=-0.034  (n_pairs=435)
+    intra_16C                    spearman=-0.067  kendall=-0.067  (n_pairs=45)
+    intra_20C                    spearman=-0.111  kendall=-0.111  (n_pairs=45)
+    intra_original               spearman=-0.067  kendall=-0.067  (n_pairs=45)
+    inter_16C_20C                spearman=+0.000  kendall=+0.000  (n_pairs=100)
+    inter_16C_original           spearman=-0.040  kendall=-0.040  (n_pairs=100)
+    inter_20C_original           spearman=+0.000  kendall=+0.000  (n_pairs=100)
+
+Q3: Should those accused of witchcraft be tried and punished by the state?
+  n_responses=2
+  Jury composition: 16C=10, 20C=10, original=10
+  Aggregate winners (response_id is 1-indexed):
+    [full    ]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+    [16C     ]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+    [20C     ]  borda_count=#1  plurality=#1  copeland=#1  instant_runoff=#1
+    [original]  borda_count=#2  plurality=#2  copeland=#2  instant_runoff=#2
+  Group rankings (Borda):
+    [full    ] #1 > #2
+    [16C     ] #1 > #2
+    [20C     ] #1 > #2
+    [original] #2 > #1
+  Agreement (mean pairwise):
+    intra_full                   spearman=+0.191  kendall=+0.191  (n_pairs=435)
+    intra_16C                    spearman=+0.600  kendall=+0.600  (n_pairs=45)
+    intra_20C                    spearman=+0.600  kendall=+0.600  (n_pairs=45)
+    intra_original               spearman=-0.067  kendall=-0.067  (n_pairs=45)
+    inter_16C_20C                spearman=+0.640  kendall=+0.640  (n_pairs=100)
+    inter_16C_original           spearman=-0.160  kendall=-0.160  (n_pairs=100)
+    inter_20C_original           spearman=-0.160  kendall=-0.160  (n_pairs=100)

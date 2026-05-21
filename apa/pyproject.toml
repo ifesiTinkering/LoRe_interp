@@ -1,0 +1,40 @@
+[project]
+name = "apa"
+version = "0.1.0"
+description = "Aggregated Preference Alignment - Democratic preference aggregation with LoRe reward models"
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "torch>=2.0",
+    "transformers>=4.40",
+    "datasets>=2.0",
+    "accelerate>=0.25",
+    "peft>=0.10",
+    "bitsandbytes>=0.43",
+    "sentence-transformers>=2.2",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "tqdm>=4.65",
+    "huggingface_hub>=0.20",
+    "pytest>=7.0",
+    "pref-voting>=1.17",
+    "numba>=0.60.0",
+    "nashpy>=0.0.40",
+    "vllm>=0.6",
+]
+
+[project.optional-dependencies]
+dev = ["black", "ruff"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["apa*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]

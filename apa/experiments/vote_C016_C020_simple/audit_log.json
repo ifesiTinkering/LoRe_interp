@@ -1,0 +1,1661 @@
+[
+  {
+    "timestamp": "2026-05-01T21:08:34.064992",
+    "query": "Should women have the same legal and political rights as men?",
+    "query_id": 1,
+    "responses_source": "/home/XXXX-1/APA/experiments/query_responses_simple.jsonl",
+    "responses": [
+      "Yes.",
+      "No."
+    ],
+    "response_embeddings_hash": "fb7018c573f492ada5784dfc390ce1d308de25a539832f98bfec824d18cd82e1",
+    "jury_manifest": {
+      "V": "/nas/XXXX-9/XXXX-1/APA/models/V_K8.pt",
+      "K": 8,
+      "sources": [
+        {
+          "origin": "prism",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt",
+          "n_loaded": 182
+        },
+        {
+          "origin": "adapted",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt",
+          "n_loaded": 20
+        }
+      ]
+    },
+    "sampled_user_ids": [
+      "hist_C016_00",
+      "hist_C016_01",
+      "hist_C016_02",
+      "hist_C016_03",
+      "hist_C016_04",
+      "hist_C016_05",
+      "hist_C016_06",
+      "hist_C016_07",
+      "hist_C016_08",
+      "hist_C016_09",
+      "hist_C020_00",
+      "hist_C020_01",
+      "hist_C020_02",
+      "hist_C020_03",
+      "hist_C020_04",
+      "hist_C020_05",
+      "hist_C020_06",
+      "hist_C020_07",
+      "hist_C020_08",
+      "hist_C020_09",
+      "prism_user_163",
+      "prism_user_28",
+      "prism_user_6",
+      "prism_user_70",
+      "prism_user_62",
+      "prism_user_57",
+      "prism_user_35",
+      "prism_user_26",
+      "prism_user_173",
+      "prism_user_139"
+    ],
+    "sampled_user_metadata": {
+      "hist_C016_00": {
+        "period": "16C",
+        "ID": "hist_C016_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_01": {
+        "period": "16C",
+        "ID": "hist_C016_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_02": {
+        "period": "16C",
+        "ID": "hist_C016_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_03": {
+        "period": "16C",
+        "ID": "hist_C016_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_04": {
+        "period": "16C",
+        "ID": "hist_C016_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_05": {
+        "period": "16C",
+        "ID": "hist_C016_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_06": {
+        "period": "16C",
+        "ID": "hist_C016_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_07": {
+        "period": "16C",
+        "ID": "hist_C016_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_08": {
+        "period": "16C",
+        "ID": "hist_C016_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_09": {
+        "period": "16C",
+        "ID": "hist_C016_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_00": {
+        "period": "20C",
+        "ID": "hist_C020_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_01": {
+        "period": "20C",
+        "ID": "hist_C020_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_02": {
+        "period": "20C",
+        "ID": "hist_C020_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_03": {
+        "period": "20C",
+        "ID": "hist_C020_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_04": {
+        "period": "20C",
+        "ID": "hist_C020_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_05": {
+        "period": "20C",
+        "ID": "hist_C020_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_06": {
+        "period": "20C",
+        "ID": "hist_C020_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_07": {
+        "period": "20C",
+        "ID": "hist_C020_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_08": {
+        "period": "20C",
+        "ID": "hist_C020_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_09": {
+        "period": "20C",
+        "ID": "hist_C020_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "prism_user_163": {
+        "period": "original",
+        "ID": "prism_user_163",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_28": {
+        "period": "original",
+        "ID": "prism_user_28",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_6": {
+        "period": "original",
+        "ID": "prism_user_6",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_70": {
+        "period": "original",
+        "ID": "prism_user_70",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_62": {
+        "period": "original",
+        "ID": "prism_user_62",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_57": {
+        "period": "original",
+        "ID": "prism_user_57",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_35": {
+        "period": "original",
+        "ID": "prism_user_35",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_26": {
+        "period": "original",
+        "ID": "prism_user_26",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_173": {
+        "period": "original",
+        "ID": "prism_user_173",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_139": {
+        "period": "original",
+        "ID": "prism_user_139",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      }
+    },
+    "per_voter_scores": {
+      "hist_C016_00": [
+        0.7792110443115234,
+        0.8356823325157166
+      ],
+      "hist_C016_01": [
+        2.6778948307037354,
+        3.1872036457061768
+      ],
+      "hist_C016_02": [
+        2.6770341396331787,
+        3.1860811710357666
+      ],
+      "hist_C016_03": [
+        0.779091477394104,
+        0.8355404138565063
+      ],
+      "hist_C016_04": [
+        0.7790833711624146,
+        0.8355114459991455
+      ],
+      "hist_C016_05": [
+        2.6780383586883545,
+        3.187323808670044
+      ],
+      "hist_C016_06": [
+        2.675466775894165,
+        3.1849162578582764
+      ],
+      "hist_C016_07": [
+        0.7791041731834412,
+        0.8355493545532227
+      ],
+      "hist_C016_08": [
+        0.6286324262619019,
+        1.2576117515563965
+      ],
+      "hist_C016_09": [
+        -0.7526436448097229,
+        -1.4222941398620605
+      ],
+      "hist_C020_00": [
+        2.6780447959899902,
+        3.1873323917388916
+      ],
+      "hist_C020_01": [
+        2.6780505180358887,
+        3.187343120574951
+      ],
+      "hist_C020_02": [
+        -0.7667422890663147,
+        0.09677579998970032
+      ],
+      "hist_C020_03": [
+        0.6286265254020691,
+        1.2575974464416504
+      ],
+      "hist_C020_04": [
+        -0.7670935988426208,
+        0.0964432805776596
+      ],
+      "hist_C020_05": [
+        -0.7527733445167542,
+        -1.4224687814712524
+      ],
+      "hist_C020_06": [
+        2.677945375442505,
+        3.1872177124023438
+      ],
+      "hist_C020_07": [
+        2.6779515743255615,
+        3.1872167587280273
+      ],
+      "hist_C020_08": [
+        0.628591001033783,
+        1.257575273513794
+      ],
+      "hist_C020_09": [
+        2.677135705947876,
+        3.186206340789795
+      ],
+      "prism_user_163": [
+        0.005090058781206608,
+        -0.020121078938245773
+      ],
+      "prism_user_28": [
+        -0.04223369061946869,
+        -0.03591609001159668
+      ],
+      "prism_user_6": [
+        0.09128762781620026,
+        0.09594829380512238
+      ],
+      "prism_user_70": [
+        -0.023149432614445686,
+        -0.006568717770278454
+      ],
+      "prism_user_62": [
+        -0.02569613978266716,
+        -0.03091866709291935
+      ],
+      "prism_user_57": [
+        -0.020262252539396286,
+        -0.03348333761096001
+      ],
+      "prism_user_35": [
+        0.019843965768814087,
+        0.020793266594409943
+      ],
+      "prism_user_26": [
+        0.00017944630235433578,
+        -0.01627984270453453
+      ],
+      "prism_user_173": [
+        -0.02973334863781929,
+        -0.05105739086866379
+      ],
+      "prism_user_139": [
+        -0.0832570493221283,
+        -0.10228337347507477
+      ]
+    },
+    "per_voter_rankings": {
+      "hist_C016_00": [
+        1,
+        0
+      ],
+      "hist_C016_01": [
+        1,
+        0
+      ],
+      "hist_C016_02": [
+        1,
+        0
+      ],
+      "hist_C016_03": [
+        1,
+        0
+      ],
+      "hist_C016_04": [
+        1,
+        0
+      ],
+      "hist_C016_05": [
+        1,
+        0
+      ],
+      "hist_C016_06": [
+        1,
+        0
+      ],
+      "hist_C016_07": [
+        1,
+        0
+      ],
+      "hist_C016_08": [
+        1,
+        0
+      ],
+      "hist_C016_09": [
+        0,
+        1
+      ],
+      "hist_C020_00": [
+        1,
+        0
+      ],
+      "hist_C020_01": [
+        1,
+        0
+      ],
+      "hist_C020_02": [
+        1,
+        0
+      ],
+      "hist_C020_03": [
+        1,
+        0
+      ],
+      "hist_C020_04": [
+        1,
+        0
+      ],
+      "hist_C020_05": [
+        0,
+        1
+      ],
+      "hist_C020_06": [
+        1,
+        0
+      ],
+      "hist_C020_07": [
+        1,
+        0
+      ],
+      "hist_C020_08": [
+        1,
+        0
+      ],
+      "hist_C020_09": [
+        1,
+        0
+      ],
+      "prism_user_163": [
+        0,
+        1
+      ],
+      "prism_user_28": [
+        1,
+        0
+      ],
+      "prism_user_6": [
+        1,
+        0
+      ],
+      "prism_user_70": [
+        1,
+        0
+      ],
+      "prism_user_62": [
+        0,
+        1
+      ],
+      "prism_user_57": [
+        0,
+        1
+      ],
+      "prism_user_35": [
+        1,
+        0
+      ],
+      "prism_user_26": [
+        0,
+        1
+      ],
+      "prism_user_173": [
+        0,
+        1
+      ],
+      "prism_user_139": [
+        0,
+        1
+      ]
+    },
+    "average_ranks": [
+      1.7333333333333334,
+      1.2666666666666666
+    ],
+    "aggregations": {
+      "borda_count": {
+        "ranking": [
+          1,
+          0
+        ],
+        "winner_idx": 1
+      },
+      "plurality": {
+        "ranking": [
+          1,
+          0
+        ],
+        "winner_idx": 1
+      },
+      "copeland": {
+        "ranking": [
+          1,
+          0
+        ],
+        "winner_idx": 1
+      },
+      "instant_runoff": {
+        "ranking": [
+          1,
+          0
+        ],
+        "winner_idx": 1
+      }
+    },
+    "config": {
+      "k_responses": 5,
+      "m_voters": 10,
+      "methods": [
+        "borda_count",
+        "plurality",
+        "copeland",
+        "instant_runoff"
+      ],
+      "sampling": "per_group",
+      "sampling_config": {
+        "per_group_counts": {
+          "16C": 10,
+          "20C": 10,
+          "original": 10
+        }
+      },
+      "jury_sources": [
+        {
+          "label": "16C",
+          "count": null
+        },
+        {
+          "label": "20C",
+          "count": null
+        },
+        {
+          "label": "original",
+          "count": 10
+        }
+      ],
+      "seed": 42,
+      "inference_llm": null
+    }
+  },
+  {
+    "timestamp": "2026-05-01T21:08:34.204519",
+    "query": "Should men hold final authority over financial decisions in a marriage?",
+    "query_id": 2,
+    "responses_source": "/home/XXXX-1/APA/experiments/query_responses_simple.jsonl",
+    "responses": [
+      "Yes.",
+      "No."
+    ],
+    "response_embeddings_hash": "a61687109c22d827bd53a4235a72f89125f3634e2bd840a8d906e917f0d5f0d1",
+    "jury_manifest": {
+      "V": "/nas/XXXX-9/XXXX-1/APA/models/V_K8.pt",
+      "K": 8,
+      "sources": [
+        {
+          "origin": "prism",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt",
+          "n_loaded": 182
+        },
+        {
+          "origin": "adapted",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt",
+          "n_loaded": 20
+        }
+      ]
+    },
+    "sampled_user_ids": [
+      "hist_C016_00",
+      "hist_C016_01",
+      "hist_C016_02",
+      "hist_C016_03",
+      "hist_C016_04",
+      "hist_C016_05",
+      "hist_C016_06",
+      "hist_C016_07",
+      "hist_C016_08",
+      "hist_C016_09",
+      "hist_C020_00",
+      "hist_C020_01",
+      "hist_C020_02",
+      "hist_C020_03",
+      "hist_C020_04",
+      "hist_C020_05",
+      "hist_C020_06",
+      "hist_C020_07",
+      "hist_C020_08",
+      "hist_C020_09",
+      "prism_user_163",
+      "prism_user_28",
+      "prism_user_6",
+      "prism_user_70",
+      "prism_user_62",
+      "prism_user_57",
+      "prism_user_35",
+      "prism_user_26",
+      "prism_user_173",
+      "prism_user_139"
+    ],
+    "sampled_user_metadata": {
+      "hist_C016_00": {
+        "period": "16C",
+        "ID": "hist_C016_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_01": {
+        "period": "16C",
+        "ID": "hist_C016_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_02": {
+        "period": "16C",
+        "ID": "hist_C016_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_03": {
+        "period": "16C",
+        "ID": "hist_C016_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_04": {
+        "period": "16C",
+        "ID": "hist_C016_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_05": {
+        "period": "16C",
+        "ID": "hist_C016_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_06": {
+        "period": "16C",
+        "ID": "hist_C016_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_07": {
+        "period": "16C",
+        "ID": "hist_C016_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_08": {
+        "period": "16C",
+        "ID": "hist_C016_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_09": {
+        "period": "16C",
+        "ID": "hist_C016_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_00": {
+        "period": "20C",
+        "ID": "hist_C020_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_01": {
+        "period": "20C",
+        "ID": "hist_C020_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_02": {
+        "period": "20C",
+        "ID": "hist_C020_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_03": {
+        "period": "20C",
+        "ID": "hist_C020_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_04": {
+        "period": "20C",
+        "ID": "hist_C020_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_05": {
+        "period": "20C",
+        "ID": "hist_C020_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_06": {
+        "period": "20C",
+        "ID": "hist_C020_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_07": {
+        "period": "20C",
+        "ID": "hist_C020_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_08": {
+        "period": "20C",
+        "ID": "hist_C020_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_09": {
+        "period": "20C",
+        "ID": "hist_C020_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "prism_user_163": {
+        "period": "original",
+        "ID": "prism_user_163",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_28": {
+        "period": "original",
+        "ID": "prism_user_28",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_6": {
+        "period": "original",
+        "ID": "prism_user_6",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_70": {
+        "period": "original",
+        "ID": "prism_user_70",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_62": {
+        "period": "original",
+        "ID": "prism_user_62",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_57": {
+        "period": "original",
+        "ID": "prism_user_57",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_35": {
+        "period": "original",
+        "ID": "prism_user_35",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_26": {
+        "period": "original",
+        "ID": "prism_user_26",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_173": {
+        "period": "original",
+        "ID": "prism_user_173",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_139": {
+        "period": "original",
+        "ID": "prism_user_139",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      }
+    },
+    "per_voter_scores": {
+      "hist_C016_00": [
+        1.0022767782211304,
+        0.8921307921409607
+      ],
+      "hist_C016_01": [
+        2.433915138244629,
+        2.5228114128112793
+      ],
+      "hist_C016_02": [
+        2.433237075805664,
+        2.5220649242401123
+      ],
+      "hist_C016_03": [
+        1.0021871328353882,
+        0.8920243978500366
+      ],
+      "hist_C016_04": [
+        1.0021569728851318,
+        0.891983151435852
+      ],
+      "hist_C016_05": [
+        2.433990716934204,
+        2.522918462753296
+      ],
+      "hist_C016_06": [
+        2.4323110580444336,
+        2.5210530757904053
+      ],
+      "hist_C016_07": [
+        1.0021957159042358,
+        0.8920356035232544
+      ],
+      "hist_C016_08": [
+        0.4129519760608673,
+        -0.7736517786979675
+      ],
+      "hist_C016_09": [
+        -0.6885650753974915,
+        -0.7680002450942993
+      ],
+      "hist_C020_00": [
+        2.4339993000030518,
+        2.5229337215423584
+      ],
+      "hist_C020_01": [
+        2.43400502204895,
+        2.522939443588257
+      ],
+      "hist_C020_02": [
+        0.43810662627220154,
+        -0.2944631278514862
+      ],
+      "hist_C020_03": [
+        0.41293424367904663,
+        -0.7736865878105164
+      ],
+      "hist_C020_04": [
+        0.4378213584423065,
+        -0.2947762906551361
+      ],
+      "hist_C020_05": [
+        -0.688684344291687,
+        -0.7681290507316589
+      ],
+      "hist_C020_06": [
+        2.4339160919189453,
+        2.5228233337402344
+      ],
+      "hist_C020_07": [
+        2.4339287281036377,
+        2.5228536128997803
+      ],
+      "hist_C020_08": [
+        0.4129379689693451,
+        -0.7736483216285706
+      ],
+      "hist_C020_09": [
+        2.4333138465881348,
+        2.5221524238586426
+      ],
+      "prism_user_163": [
+        -0.023838285356760025,
+        -0.03991173952817917
+      ],
+      "prism_user_28": [
+        -0.026594502851366997,
+        -0.021340716630220413
+      ],
+      "prism_user_6": [
+        0.08393947035074234,
+        0.08529694378376007
+      ],
+      "prism_user_70": [
+        -0.005750609096139669,
+        -0.0011636191047728062
+      ],
+      "prism_user_62": [
+        -0.03482522815465927,
+        -0.024906471371650696
+      ],
+      "prism_user_57": [
+        -0.025501322001218796,
+        -0.020480498671531677
+      ],
+      "prism_user_35": [
+        0.01694217324256897,
+        -0.0011902861297130585
+      ],
+      "prism_user_26": [
+        -0.019082754850387573,
+        -0.02400340512394905
+      ],
+      "prism_user_173": [
+        -0.04680037498474121,
+        -0.08506256341934204
+      ],
+      "prism_user_139": [
+        -0.0791764110326767,
+        -0.05735582858324051
+      ]
+    },
+    "per_voter_rankings": {
+      "hist_C016_00": [
+        0,
+        1
+      ],
+      "hist_C016_01": [
+        1,
+        0
+      ],
+      "hist_C016_02": [
+        1,
+        0
+      ],
+      "hist_C016_03": [
+        0,
+        1
+      ],
+      "hist_C016_04": [
+        0,
+        1
+      ],
+      "hist_C016_05": [
+        1,
+        0
+      ],
+      "hist_C016_06": [
+        1,
+        0
+      ],
+      "hist_C016_07": [
+        0,
+        1
+      ],
+      "hist_C016_08": [
+        0,
+        1
+      ],
+      "hist_C016_09": [
+        0,
+        1
+      ],
+      "hist_C020_00": [
+        1,
+        0
+      ],
+      "hist_C020_01": [
+        1,
+        0
+      ],
+      "hist_C020_02": [
+        0,
+        1
+      ],
+      "hist_C020_03": [
+        0,
+        1
+      ],
+      "hist_C020_04": [
+        0,
+        1
+      ],
+      "hist_C020_05": [
+        0,
+        1
+      ],
+      "hist_C020_06": [
+        1,
+        0
+      ],
+      "hist_C020_07": [
+        1,
+        0
+      ],
+      "hist_C020_08": [
+        0,
+        1
+      ],
+      "hist_C020_09": [
+        1,
+        0
+      ],
+      "prism_user_163": [
+        0,
+        1
+      ],
+      "prism_user_28": [
+        1,
+        0
+      ],
+      "prism_user_6": [
+        1,
+        0
+      ],
+      "prism_user_70": [
+        1,
+        0
+      ],
+      "prism_user_62": [
+        1,
+        0
+      ],
+      "prism_user_57": [
+        1,
+        0
+      ],
+      "prism_user_35": [
+        0,
+        1
+      ],
+      "prism_user_26": [
+        0,
+        1
+      ],
+      "prism_user_173": [
+        0,
+        1
+      ],
+      "prism_user_139": [
+        1,
+        0
+      ]
+    },
+    "average_ranks": [
+      1.5,
+      1.5
+    ],
+    "aggregations": {
+      "borda_count": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      },
+      "plurality": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      },
+      "copeland": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      },
+      "instant_runoff": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      }
+    },
+    "config": {
+      "k_responses": 5,
+      "m_voters": 10,
+      "methods": [
+        "borda_count",
+        "plurality",
+        "copeland",
+        "instant_runoff"
+      ],
+      "sampling": "per_group",
+      "sampling_config": {
+        "per_group_counts": {
+          "16C": 10,
+          "20C": 10,
+          "original": 10
+        }
+      },
+      "jury_sources": [
+        {
+          "label": "16C",
+          "count": null
+        },
+        {
+          "label": "20C",
+          "count": null
+        },
+        {
+          "label": "original",
+          "count": 10
+        }
+      ],
+      "seed": 42,
+      "inference_llm": null
+    }
+  },
+  {
+    "timestamp": "2026-05-01T21:08:34.344107",
+    "query": "Should those accused of witchcraft be tried and punished by the state?",
+    "query_id": 3,
+    "responses_source": "/home/XXXX-1/APA/experiments/query_responses_simple.jsonl",
+    "responses": [
+      "Yes.",
+      "No."
+    ],
+    "response_embeddings_hash": "9af815809adf552c8b698b7189c00d83254e878f0b30604d5cf24e81d4f5a4b1",
+    "jury_manifest": {
+      "V": "/nas/XXXX-9/XXXX-1/APA/models/V_K8.pt",
+      "K": 8,
+      "sources": [
+        {
+          "origin": "prism",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt",
+          "n_loaded": 182
+        },
+        {
+          "origin": "adapted",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt",
+          "n_loaded": 20
+        }
+      ]
+    },
+    "sampled_user_ids": [
+      "hist_C016_00",
+      "hist_C016_01",
+      "hist_C016_02",
+      "hist_C016_03",
+      "hist_C016_04",
+      "hist_C016_05",
+      "hist_C016_06",
+      "hist_C016_07",
+      "hist_C016_08",
+      "hist_C016_09",
+      "hist_C020_00",
+      "hist_C020_01",
+      "hist_C020_02",
+      "hist_C020_03",
+      "hist_C020_04",
+      "hist_C020_05",
+      "hist_C020_06",
+      "hist_C020_07",
+      "hist_C020_08",
+      "hist_C020_09",
+      "prism_user_163",
+      "prism_user_28",
+      "prism_user_6",
+      "prism_user_70",
+      "prism_user_62",
+      "prism_user_57",
+      "prism_user_35",
+      "prism_user_26",
+      "prism_user_173",
+      "prism_user_139"
+    ],
+    "sampled_user_metadata": {
+      "hist_C016_00": {
+        "period": "16C",
+        "ID": "hist_C016_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_01": {
+        "period": "16C",
+        "ID": "hist_C016_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_02": {
+        "period": "16C",
+        "ID": "hist_C016_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_03": {
+        "period": "16C",
+        "ID": "hist_C016_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_04": {
+        "period": "16C",
+        "ID": "hist_C016_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_05": {
+        "period": "16C",
+        "ID": "hist_C016_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_06": {
+        "period": "16C",
+        "ID": "hist_C016_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_07": {
+        "period": "16C",
+        "ID": "hist_C016_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_08": {
+        "period": "16C",
+        "ID": "hist_C016_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_09": {
+        "period": "16C",
+        "ID": "hist_C016_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_00": {
+        "period": "20C",
+        "ID": "hist_C020_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_01": {
+        "period": "20C",
+        "ID": "hist_C020_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_02": {
+        "period": "20C",
+        "ID": "hist_C020_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_03": {
+        "period": "20C",
+        "ID": "hist_C020_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_04": {
+        "period": "20C",
+        "ID": "hist_C020_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_05": {
+        "period": "20C",
+        "ID": "hist_C020_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_06": {
+        "period": "20C",
+        "ID": "hist_C020_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_07": {
+        "period": "20C",
+        "ID": "hist_C020_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_08": {
+        "period": "20C",
+        "ID": "hist_C020_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_09": {
+        "period": "20C",
+        "ID": "hist_C020_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "prism_user_163": {
+        "period": "original",
+        "ID": "prism_user_163",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_28": {
+        "period": "original",
+        "ID": "prism_user_28",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_6": {
+        "period": "original",
+        "ID": "prism_user_6",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_70": {
+        "period": "original",
+        "ID": "prism_user_70",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_62": {
+        "period": "original",
+        "ID": "prism_user_62",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_57": {
+        "period": "original",
+        "ID": "prism_user_57",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_35": {
+        "period": "original",
+        "ID": "prism_user_35",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_26": {
+        "period": "original",
+        "ID": "prism_user_26",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_173": {
+        "period": "original",
+        "ID": "prism_user_173",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_139": {
+        "period": "original",
+        "ID": "prism_user_139",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      }
+    },
+    "per_voter_scores": {
+      "hist_C016_00": [
+        0.6326856017112732,
+        0.20949454605579376
+      ],
+      "hist_C016_01": [
+        1.1077446937561035,
+        -0.15090890228748322
+      ],
+      "hist_C016_02": [
+        1.10755455493927,
+        -0.15068486332893372
+      ],
+      "hist_C016_03": [
+        0.6326560974121094,
+        0.20951725542545319
+      ],
+      "hist_C016_04": [
+        0.6326457262039185,
+        0.20951072871685028
+      ],
+      "hist_C016_05": [
+        1.1078054904937744,
+        -0.1508757323026657
+      ],
+      "hist_C016_06": [
+        1.1080372333526611,
+        -0.149155855178833
+      ],
+      "hist_C016_07": [
+        0.6326572299003601,
+        0.20951202511787415
+      ],
+      "hist_C016_08": [
+        0.3753163814544678,
+        0.20924843847751617
+      ],
+      "hist_C016_09": [
+        0.06850779056549072,
+        0.19881317019462585
+      ],
+      "hist_C020_00": [
+        1.1078073978424072,
+        -0.1508769392967224
+      ],
+      "hist_C020_01": [
+        1.107812523841858,
+        -0.15087266266345978
+      ],
+      "hist_C020_02": [
+        -0.27156341075897217,
+        -0.742713987827301
+      ],
+      "hist_C020_03": [
+        0.37530046701431274,
+        0.20923210680484772
+      ],
+      "hist_C020_04": [
+        -0.27186208963394165,
+        -0.7429984211921692
+      ],
+      "hist_C020_05": [
+        0.06846702843904495,
+        0.19882453978061676
+      ],
+      "hist_C020_06": [
+        1.1077790260314941,
+        -0.15085825324058533
+      ],
+      "hist_C020_07": [
+        1.1077837944030762,
+        -0.1508595198392868
+      ],
+      "hist_C020_08": [
+        0.37533608078956604,
+        0.20929311215877533
+      ],
+      "hist_C020_09": [
+        1.1075797080993652,
+        -0.15070469677448273
+      ],
+      "prism_user_163": [
+        -0.025311287492513657,
+        -0.0344727598130703
+      ],
+      "prism_user_28": [
+        -0.011717405170202255,
+        0.0008195117115974426
+      ],
+      "prism_user_6": [
+        0.05603814125061035,
+        0.03629171848297119
+      ],
+      "prism_user_70": [
+        -0.024924354627728462,
+        -0.032890867441892624
+      ],
+      "prism_user_62": [
+        -0.03156965225934982,
+        -0.024081263691186905
+      ],
+      "prism_user_57": [
+        -0.015831811353564262,
+        -0.010586937889456749
+      ],
+      "prism_user_35": [
+        0.014999687671661377,
+        0.006583826616406441
+      ],
+      "prism_user_26": [
+        -0.0038637472316622734,
+        -0.0019027423113584518
+      ],
+      "prism_user_173": [
+        -0.017066946253180504,
+        -0.013030839152634144
+      ],
+      "prism_user_139": [
+        -0.06683073192834854,
+        -0.050891537219285965
+      ]
+    },
+    "per_voter_rankings": {
+      "hist_C016_00": [
+        0,
+        1
+      ],
+      "hist_C016_01": [
+        0,
+        1
+      ],
+      "hist_C016_02": [
+        0,
+        1
+      ],
+      "hist_C016_03": [
+        0,
+        1
+      ],
+      "hist_C016_04": [
+        0,
+        1
+      ],
+      "hist_C016_05": [
+        0,
+        1
+      ],
+      "hist_C016_06": [
+        0,
+        1
+      ],
+      "hist_C016_07": [
+        0,
+        1
+      ],
+      "hist_C016_08": [
+        0,
+        1
+      ],
+      "hist_C016_09": [
+        1,
+        0
+      ],
+      "hist_C020_00": [
+        0,
+        1
+      ],
+      "hist_C020_01": [
+        0,
+        1
+      ],
+      "hist_C020_02": [
+        0,
+        1
+      ],
+      "hist_C020_03": [
+        0,
+        1
+      ],
+      "hist_C020_04": [
+        0,
+        1
+      ],
+      "hist_C020_05": [
+        1,
+        0
+      ],
+      "hist_C020_06": [
+        0,
+        1
+      ],
+      "hist_C020_07": [
+        0,
+        1
+      ],
+      "hist_C020_08": [
+        0,
+        1
+      ],
+      "hist_C020_09": [
+        0,
+        1
+      ],
+      "prism_user_163": [
+        0,
+        1
+      ],
+      "prism_user_28": [
+        1,
+        0
+      ],
+      "prism_user_6": [
+        0,
+        1
+      ],
+      "prism_user_70": [
+        0,
+        1
+      ],
+      "prism_user_62": [
+        1,
+        0
+      ],
+      "prism_user_57": [
+        1,
+        0
+      ],
+      "prism_user_35": [
+        0,
+        1
+      ],
+      "prism_user_26": [
+        1,
+        0
+      ],
+      "prism_user_173": [
+        1,
+        0
+      ],
+      "prism_user_139": [
+        1,
+        0
+      ]
+    },
+    "average_ranks": [
+      1.2666666666666666,
+      1.7333333333333334
+    ],
+    "aggregations": {
+      "borda_count": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      },
+      "plurality": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      },
+      "copeland": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      },
+      "instant_runoff": {
+        "ranking": [
+          0,
+          1
+        ],
+        "winner_idx": 0
+      }
+    },
+    "config": {
+      "k_responses": 5,
+      "m_voters": 10,
+      "methods": [
+        "borda_count",
+        "plurality",
+        "copeland",
+        "instant_runoff"
+      ],
+      "sampling": "per_group",
+      "sampling_config": {
+        "per_group_counts": {
+          "16C": 10,
+          "20C": 10,
+          "original": 10
+        }
+      },
+      "jury_sources": [
+        {
+          "label": "16C",
+          "count": null
+        },
+        {
+          "label": "20C",
+          "count": null
+        },
+        {
+          "label": "original",
+          "count": 10
+        }
+      ],
+      "seed": 42,
+      "inference_llm": null
+    }
+  }
+]

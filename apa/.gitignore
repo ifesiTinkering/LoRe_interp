@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.venv
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local config
+.env
+.env.local
+
+# Data and model artifacts (stored on NAS)
+*.pt
+*.pkl
+*.ckpt
+*.bin
+embeddings/
+checkpoints/
+
+# Exception: paper-reproduction checkpoints are tracked in-repo (~150 KB total).
+# These are exactly the artifacts the original paper run produced; they let
+# reviewers reproduce the votes byte-for-byte without having to retrain V.
+!experiments/checkpoints/
+!experiments/checkpoints/*.pt
+
+# HuggingFace cache
+hf_cache/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/

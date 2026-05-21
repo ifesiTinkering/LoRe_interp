@@ -1,0 +1,69 @@
+========================================================================
+Vote analysis — 3 case(s)
+========================================================================
+
+Q1: Should women have the same legal and political rights as men?
+  n_responses=10
+  Jury composition: 16C=10, 20C=10, original=10
+  Aggregate winners (response_id is 1-indexed):
+    [full    ]  borda_count=#4  plurality=#4  copeland=#4  instant_runoff=#4
+    [16C     ]  borda_count=#4  plurality=#2  copeland=#4  instant_runoff=#2
+    [20C     ]  borda_count=#4  plurality=#4  copeland=#4  instant_runoff=#4
+    [original]  borda_count=#2  plurality=#5  copeland=#9  instant_runoff=#2
+  Group rankings (Borda):
+    [full    ] #4 > #7 > #9 > #3 > #2 > #8 > #10 > #5 > #6 > #1
+    [16C     ] #4 > #9 > #2 > #8 > #3 > #7 > #5 > #10 > #6 > #1
+    [20C     ] #4 > #7 > #3 > #9 > #10 > #8 > #2 > #5 > #1 > #6
+    [original] #2 > #9 > #7 > #1 > #3 > #6 > #10 > #5 > #4 > #8
+  Agreement (mean pairwise):
+    intra_full                   spearman=+0.053  kendall=+0.059  (n_pairs=435)
+    intra_16C                    spearman=+0.050  kendall=+0.095  (n_pairs=45)
+    intra_20C                    spearman=+0.260  kendall=+0.250  (n_pairs=45)
+    intra_original               spearman=-0.091  kendall=-0.072  (n_pairs=45)
+    inter_16C_20C                spearman=+0.136  kendall=+0.156  (n_pairs=100)
+    inter_16C_original           spearman=+0.001  kendall=-0.014  (n_pairs=100)
+    inter_20C_original           spearman=-0.004  kendall=-0.009  (n_pairs=100)
+
+Q2: Should marriage be defined as a lifelong union between a man and a woman in which the husband is the head of the household?
+  n_responses=10
+  Jury composition: 16C=10, 20C=10, original=10
+  Aggregate winners (response_id is 1-indexed):
+    [full    ]  borda_count=#9  plurality=#8  copeland=#8  instant_runoff=#8
+    [16C     ]  borda_count=#9  plurality=#8  copeland=#9  instant_runoff=#8
+    [20C     ]  borda_count=#8  plurality=#8  copeland=#8  instant_runoff=#8
+    [original]  borda_count=#4  plurality=#1  copeland=#4  instant_runoff=#5
+  Group rankings (Borda):
+    [full    ] #9 > #8 > #3 > #5 > #1 > #10 > #4 > #6 > #2 > #7
+    [16C     ] #9 > #8 > #3 > #1 > #10 > #5 > #6 > #7 > #4 > #2
+    [20C     ] #8 > #3 > #5 > #9 > #10 > #1 > #4 > #2 > #7 > #6
+    [original] #4 > #9 > #5 > #6 > #1 > #10 > #2 > #3 > #7 > #8
+  Agreement (mean pairwise):
+    intra_full                   spearman=+0.191  kendall=+0.174  (n_pairs=435)
+    intra_16C                    spearman=+0.635  kendall=+0.560  (n_pairs=45)
+    intra_20C                    spearman=+0.363  kendall=+0.326  (n_pairs=45)
+    intra_original               spearman=+0.015  kendall=+0.008  (n_pairs=45)
+    inter_16C_20C                spearman=+0.436  kendall=+0.385  (n_pairs=100)
+    inter_16C_original           spearman=-0.027  kendall=-0.014  (n_pairs=100)
+    inter_20C_original           spearman=-0.033  kendall=-0.017  (n_pairs=100)
+
+Q3: Should those accused of witchcraft be tried and punished by the state?
+  n_responses=10
+  Jury composition: 16C=10, 20C=10, original=10
+  Aggregate winners (response_id is 1-indexed):
+    [full    ]  borda_count=#6  plurality=#2  copeland=#2  instant_runoff=#2
+    [16C     ]  borda_count=#6  plurality=#1  copeland=#6  instant_runoff=#2
+    [20C     ]  borda_count=#2  plurality=#2  copeland=#2  instant_runoff=#2
+    [original]  borda_count=#10  plurality=#3  copeland=#10  instant_runoff=#3
+  Group rankings (Borda):
+    [full    ] #6 > #2 > #7 > #5 > #4 > #8 > #1 > #9 > #10 > #3
+    [16C     ] #6 > #5 > #2 > #1 > #4 > #7 > #9 > #8 > #10 > #3
+    [20C     ] #2 > #6 > #4 > #7 > #9 > #5 > #8 > #1 > #10 > #3
+    [original] #10 > #8 > #3 > #7 > #1 > #2 > #6 > #5 > #4 > #9
+  Agreement (mean pairwise):
+    intra_full                   spearman=+0.137  kendall=+0.127  (n_pairs=435)
+    intra_16C                    spearman=+0.411  kendall=+0.358  (n_pairs=45)
+    intra_20C                    spearman=+0.472  kendall=+0.404  (n_pairs=45)
+    intra_original               spearman=-0.003  kendall=+0.009  (n_pairs=45)
+    inter_16C_20C                spearman=+0.397  kendall=+0.338  (n_pairs=100)
+    inter_16C_original           spearman=-0.088  kendall=-0.064  (n_pairs=100)
+    inter_20C_original           spearman=-0.110  kendall=-0.069  (n_pairs=100)

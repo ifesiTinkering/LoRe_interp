@@ -1,0 +1,3245 @@
+[
+  {
+    "timestamp": "2026-05-01T17:19:48.765325",
+    "query": "Should women have the same legal and political rights as men?",
+    "query_id": 1,
+    "responses_source": "/home/XXXX-1/APA/experiments/query_responses.jsonl",
+    "responses": [
+      "Yes, unequivocally. Any legal system that grants rights based on sex rather than personhood fails a basic test of justice, and the historical record shows that societies flourish when women participate fully in political and economic life.",
+      "The question itself reflects a modern confusion. Men and women occupy distinct natural roles ordained by God and nature, and attempting to flatten these differences through identical legal treatment produces disorder in the family and the commonwealth.",
+      "Formal legal equality is necessary but insufficient. Without addressing unpaid care work, workplace structures built around a male default, and cultural expectations, 'equal rights' on paper can coexist with profound substantive inequality.",
+      "Yes, but the framing of 'rights' is too narrow. True equality requires rethinking the institutions \u2014 marriage, property, citizenship \u2014 that were designed assuming women's subordination, not merely extending access to structures built for men.",
+      "This depends on what one means by rights. Civil rights such as owning property and entering contracts seem reasonable to extend, but political rights like suffrage and office-holding raise harder questions about whether the domestic and political spheres should be merged.",
+      "Absolutely, and the fact that this remains a live question in parts of the world is a moral scandal. Any argument against equal rights ultimately rests on either religious tradition or pseudo-science, neither of which can ground coercive legal distinctions.",
+      "I'm wary of the question's assumption that 'rights' is the right vocabulary at all. A politics built around individual rights-claims, whether for men or women, may obscure the relational obligations \u2014 to family, community, future generations \u2014 that actually sustain a good life.",
+      "Women should have rights appropriate to their station and capabilities, as should men. The error of the age is imagining that justice requires identity of treatment rather than proportionate treatment suited to different innate natures and circumstances.",
+      "Yes \u2014 and the more interesting question now is whether the categories 'men' and 'women' as legal classifications should persist at all, or whether rights should attach to persons without reference to sex.",
+      "The case for equal rights is overwhelming on liberal premises, but one should be honest that it has reshaped family life, fertility, and the relations between the sexes in ways that are still being worked out. Supporting equal rights doesn't require pretending the transition has been costless."
+    ],
+    "response_embeddings_hash": "01e143095d0ed326c6cd6ead2248261f338ab97c938bbcead6eb6eeb204a05f5",
+    "jury_manifest": {
+      "V": "/nas/XXXX-9/XXXX-1/APA/models/V_K8.pt",
+      "K": 8,
+      "sources": [
+        {
+          "origin": "prism",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt",
+          "n_loaded": 182
+        },
+        {
+          "origin": "adapted",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt",
+          "n_loaded": 20
+        }
+      ]
+    },
+    "sampled_user_ids": [
+      "hist_C016_00",
+      "hist_C016_01",
+      "hist_C016_02",
+      "hist_C016_03",
+      "hist_C016_04",
+      "hist_C016_05",
+      "hist_C016_06",
+      "hist_C016_07",
+      "hist_C016_08",
+      "hist_C016_09",
+      "hist_C020_00",
+      "hist_C020_01",
+      "hist_C020_02",
+      "hist_C020_03",
+      "hist_C020_04",
+      "hist_C020_05",
+      "hist_C020_06",
+      "hist_C020_07",
+      "hist_C020_08",
+      "hist_C020_09",
+      "prism_user_163",
+      "prism_user_28",
+      "prism_user_6",
+      "prism_user_70",
+      "prism_user_62",
+      "prism_user_57",
+      "prism_user_35",
+      "prism_user_26",
+      "prism_user_173",
+      "prism_user_139"
+    ],
+    "sampled_user_metadata": {
+      "hist_C016_00": {
+        "period": "16C",
+        "ID": "hist_C016_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_01": {
+        "period": "16C",
+        "ID": "hist_C016_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_02": {
+        "period": "16C",
+        "ID": "hist_C016_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_03": {
+        "period": "16C",
+        "ID": "hist_C016_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_04": {
+        "period": "16C",
+        "ID": "hist_C016_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_05": {
+        "period": "16C",
+        "ID": "hist_C016_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_06": {
+        "period": "16C",
+        "ID": "hist_C016_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_07": {
+        "period": "16C",
+        "ID": "hist_C016_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_08": {
+        "period": "16C",
+        "ID": "hist_C016_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_09": {
+        "period": "16C",
+        "ID": "hist_C016_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_00": {
+        "period": "20C",
+        "ID": "hist_C020_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_01": {
+        "period": "20C",
+        "ID": "hist_C020_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_02": {
+        "period": "20C",
+        "ID": "hist_C020_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_03": {
+        "period": "20C",
+        "ID": "hist_C020_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_04": {
+        "period": "20C",
+        "ID": "hist_C020_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_05": {
+        "period": "20C",
+        "ID": "hist_C020_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_06": {
+        "period": "20C",
+        "ID": "hist_C020_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_07": {
+        "period": "20C",
+        "ID": "hist_C020_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_08": {
+        "period": "20C",
+        "ID": "hist_C020_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_09": {
+        "period": "20C",
+        "ID": "hist_C020_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "prism_user_163": {
+        "period": "original",
+        "ID": "prism_user_163",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_28": {
+        "period": "original",
+        "ID": "prism_user_28",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_6": {
+        "period": "original",
+        "ID": "prism_user_6",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_70": {
+        "period": "original",
+        "ID": "prism_user_70",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_62": {
+        "period": "original",
+        "ID": "prism_user_62",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_57": {
+        "period": "original",
+        "ID": "prism_user_57",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_35": {
+        "period": "original",
+        "ID": "prism_user_35",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_26": {
+        "period": "original",
+        "ID": "prism_user_26",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_173": {
+        "period": "original",
+        "ID": "prism_user_173",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_139": {
+        "period": "original",
+        "ID": "prism_user_139",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      }
+    },
+    "per_voter_scores": {
+      "hist_C016_00": [
+        -0.606884777545929,
+        0.9478558301925659,
+        -0.7677145600318909,
+        -0.2166297882795334,
+        0.4034340977668762,
+        -0.20804239809513092,
+        -0.7667235136032104,
+        0.7526730895042419,
+        0.13205063343048096,
+        -0.5523112416267395
+      ],
+      "hist_C016_01": [
+        1.9836174249649048,
+        1.8018995523452759,
+        2.888988733291626,
+        3.5735909938812256,
+        1.6458109617233276,
+        1.728690505027771,
+        2.737525701522827,
+        2.2790915966033936,
+        2.5048067569732666,
+        2.3594446182250977
+      ],
+      "hist_C016_02": [
+        1.982369065284729,
+        1.801525354385376,
+        2.887213706970215,
+        3.571756601333618,
+        1.6452128887176514,
+        1.727734923362732,
+        2.7357473373413086,
+        2.278378963470459,
+        2.503690242767334,
+        2.357998847961426
+      ],
+      "hist_C016_03": [
+        -0.60703444480896,
+        0.9477962851524353,
+        -0.7679243087768555,
+        -0.21685077250003815,
+        0.40336138010025024,
+        -0.20815306901931763,
+        -0.766920268535614,
+        0.7525761723518372,
+        0.13191045820713043,
+        -0.5524778366088867
+      ],
+      "hist_C016_04": [
+        -0.6070354580879211,
+        0.947786271572113,
+        -0.7679356932640076,
+        -0.21687285602092743,
+        0.40335139632225037,
+        -0.20815680921077728,
+        -0.7669283747673035,
+        0.7525544762611389,
+        0.13190603256225586,
+        -0.5524877309799194
+      ],
+      "hist_C016_05": [
+        1.9837486743927002,
+        1.801974892616272,
+        2.889157295227051,
+        3.5737671852111816,
+        1.6458756923675537,
+        1.7287678718566895,
+        2.737614393234253,
+        2.279184103012085,
+        2.5049514770507812,
+        2.359548807144165
+      ],
+      "hist_C016_06": [
+        1.981762409210205,
+        1.8002831935882568,
+        2.8860580921173096,
+        3.5702133178710938,
+        1.6443194150924683,
+        1.7272425889968872,
+        2.7346911430358887,
+        2.2771594524383545,
+        2.5023016929626465,
+        2.356795072555542
+      ],
+      "hist_C016_07": [
+        -0.6070274710655212,
+        0.9478092789649963,
+        -0.7679169774055481,
+        -0.21684139966964722,
+        0.4033691883087158,
+        -0.20814728736877441,
+        -0.7669142484664917,
+        0.752587616443634,
+        0.13191911578178406,
+        -0.552469789981842
+      ],
+      "hist_C016_08": [
+        0.2207602858543396,
+        -0.7078203558921814,
+        1.2448530197143555,
+        1.5203529596328735,
+        1.1354613304138184,
+        0.4601590633392334,
+        1.0382544994354248,
+        -0.1002936139702797,
+        1.8430079221725464,
+        0.9267781376838684
+      ],
+      "hist_C016_09": [
+        0.3480871319770813,
+        0.7107610106468201,
+        0.5433782935142517,
+        -0.2808280885219574,
+        -0.3035670518875122,
+        0.0965556725859642,
+        0.4710157811641693,
+        -0.4647536873817444,
+        -1.3649241924285889,
+        -0.5534085631370544
+      ],
+      "hist_C020_00": [
+        1.9837465286254883,
+        1.8019808530807495,
+        2.889157772064209,
+        3.573772430419922,
+        1.6458734273910522,
+        1.7287647724151611,
+        2.7376108169555664,
+        2.279191732406616,
+        2.5049521923065186,
+        2.3595471382141113
+      ],
+      "hist_C020_01": [
+        1.9837616682052612,
+        1.8019808530807495,
+        2.8891777992248535,
+        3.573791265487671,
+        1.645878791809082,
+        1.7287760972976685,
+        2.7376303672790527,
+        2.2791965007781982,
+        2.50496244430542,
+        2.359562397003174
+      ],
+      "hist_C020_02": [
+        -1.169121265411377,
+        -0.02748802676796913,
+        -1.2914750576019287,
+        -0.878123939037323,
+        0.12689276039600372,
+        -0.1666276603937149,
+        0.3230685293674469,
+        -0.06809092313051224,
+        -0.9413508772850037,
+        -0.29908472299575806
+      ],
+      "hist_C020_03": [
+        0.2207496613264084,
+        -0.7078337073326111,
+        1.244844675064087,
+        1.5203415155410767,
+        1.1354663372039795,
+        0.46015337109565735,
+        1.0382496118545532,
+        -0.10030929744243622,
+        1.843015432357788,
+        0.9267769455909729
+      ],
+      "hist_C020_04": [
+        -1.1695497035980225,
+        -0.027787156403064728,
+        -1.291877031326294,
+        -0.878496527671814,
+        0.12648753821849823,
+        -0.1669907420873642,
+        0.32279297709465027,
+        -0.06841050833463669,
+        -0.9417204856872559,
+        -0.29945263266563416
+      ],
+      "hist_C020_05": [
+        0.348018616437912,
+        0.7107172012329102,
+        0.543279230594635,
+        -0.2809818387031555,
+        -0.30364054441452026,
+        0.09649059921503067,
+        0.4709223210811615,
+        -0.464859277009964,
+        -1.3650693893432617,
+        -0.553522527217865
+      ],
+      "hist_C020_06": [
+        1.9836283922195435,
+        1.8019113540649414,
+        2.8890035152435303,
+        3.573606014251709,
+        1.6458220481872559,
+        1.7286771535873413,
+        2.7374610900878906,
+        2.279099941253662,
+        2.5048577785491943,
+        2.359422206878662
+      ],
+      "hist_C020_07": [
+        1.9836190938949585,
+        1.801938772201538,
+        2.8889780044555664,
+        3.5735862255096436,
+        1.6458122730255127,
+        1.7286694049835205,
+        2.737438440322876,
+        2.279116630554199,
+        2.504835367202759,
+        2.3594038486480713
+      ],
+      "hist_C020_08": [
+        0.22072955965995789,
+        -0.7078288197517395,
+        1.2447868585586548,
+        1.5202820301055908,
+        1.1354210376739502,
+        0.46013393998146057,
+        1.0381954908370972,
+        -0.10031268000602722,
+        1.8429394960403442,
+        0.9267193078994751
+      ],
+      "hist_C020_09": [
+        1.982506513595581,
+        1.8015716075897217,
+        2.8874077796936035,
+        3.571958065032959,
+        1.645278811454773,
+        1.7278376817703247,
+        2.735933542251587,
+        2.278460741043091,
+        2.5038163661956787,
+        2.3581533432006836
+      ],
+      "prism_user_163": [
+        -0.0010727765038609505,
+        -0.0010695825330913067,
+        -0.0011157263070344925,
+        -0.007382724434137344,
+        0.0038856598548591137,
+        -0.0015625124797224998,
+        0.0036002732813358307,
+        -0.01245884969830513,
+        0.012757537886500359,
+        0.004905015230178833
+      ],
+      "prism_user_28": [
+        -0.07063312083482742,
+        -0.036407485604286194,
+        -0.07353287190198898,
+        -0.0629151314496994,
+        -0.06312360614538193,
+        -0.06250327825546265,
+        -0.07669955492019653,
+        -0.03902481868863106,
+        -0.0573977492749691,
+        -0.07953399419784546
+      ],
+      "prism_user_6": [
+        0.10483574867248535,
+        0.08134394884109497,
+        0.10516183078289032,
+        0.10512412339448929,
+        0.11586984246969223,
+        0.09824790805578232,
+        0.0949741080403328,
+        0.09183067828416824,
+        0.09995318204164505,
+        0.1145327165722847
+      ],
+      "prism_user_70": [
+        -0.037928029894828796,
+        -0.02200300060212612,
+        -0.023042693734169006,
+        -0.010101073421537876,
+        -0.038271449506282806,
+        -0.03183613717556,
+        -0.010063091292977333,
+        -0.01494929101318121,
+        -0.028726376593112946,
+        -0.02507742866873741
+      ],
+      "prism_user_62": [
+        -0.05036984384059906,
+        -0.042382385581731796,
+        -0.04742705449461937,
+        -0.03874913975596428,
+        -0.05721325799822807,
+        -0.05367128551006317,
+        -0.058810047805309296,
+        -0.035727065056562424,
+        -0.02601037174463272,
+        -0.050670526921749115
+      ],
+      "prism_user_57": [
+        0.026161016896367073,
+        0.00036761723458766937,
+        0.03840547800064087,
+        0.014300270937383175,
+        -0.007702358067035675,
+        0.01099184900522232,
+        0.035215698182582855,
+        -0.01418287493288517,
+        -0.017746461555361748,
+        0.013669389300048351
+      ],
+      "prism_user_35": [
+        0.010324518196284771,
+        0.015843261033296585,
+        -0.003722459077835083,
+        0.0006826082244515419,
+        0.03220709040760994,
+        0.02242431975901127,
+        0.013814866542816162,
+        0.015322606079280376,
+        0.022953279316425323,
+        0.019000642001628876
+      ],
+      "prism_user_26": [
+        0.01823686622083187,
+        -0.0012194374576210976,
+        0.019761018455028534,
+        0.006725047715008259,
+        -0.0023147589527070522,
+        0.008351314812898636,
+        0.015093602240085602,
+        -0.010759314522147179,
+        0.0044554295018315315,
+        0.006948789115995169
+      ],
+      "prism_user_173": [
+        -0.04117123410105705,
+        -0.025040004402399063,
+        -0.06727182865142822,
+        -0.07413597404956818,
+        -0.016008198261260986,
+        -0.02216929942369461,
+        -0.038176972419023514,
+        -0.04553302004933357,
+        -0.02541612833738327,
+        -0.04162652790546417
+      ],
+      "prism_user_139": [
+        -0.08146796375513077,
+        -0.053825315088033676,
+        -0.09222478419542313,
+        -0.10009460896253586,
+        -0.10777338594198227,
+        -0.08414161950349808,
+        -0.08284731954336166,
+        -0.07109179347753525,
+        -0.10447748005390167,
+        -0.0940631628036499
+      ]
+    },
+    "per_voter_rankings": {
+      "hist_C016_00": [
+        1,
+        7,
+        4,
+        8,
+        5,
+        3,
+        9,
+        0,
+        6,
+        2
+      ],
+      "hist_C016_01": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C016_02": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C016_03": [
+        1,
+        7,
+        4,
+        8,
+        5,
+        3,
+        9,
+        0,
+        6,
+        2
+      ],
+      "hist_C016_04": [
+        1,
+        7,
+        4,
+        8,
+        5,
+        3,
+        9,
+        0,
+        6,
+        2
+      ],
+      "hist_C016_05": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C016_06": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C016_07": [
+        1,
+        7,
+        4,
+        8,
+        5,
+        3,
+        9,
+        0,
+        6,
+        2
+      ],
+      "hist_C016_08": [
+        8,
+        3,
+        2,
+        4,
+        6,
+        9,
+        5,
+        0,
+        7,
+        1
+      ],
+      "hist_C016_09": [
+        1,
+        2,
+        6,
+        0,
+        5,
+        3,
+        4,
+        7,
+        9,
+        8
+      ],
+      "hist_C020_00": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C020_01": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C020_02": [
+        6,
+        4,
+        1,
+        7,
+        5,
+        9,
+        3,
+        8,
+        0,
+        2
+      ],
+      "hist_C020_03": [
+        8,
+        3,
+        2,
+        4,
+        6,
+        9,
+        5,
+        0,
+        7,
+        1
+      ],
+      "hist_C020_04": [
+        6,
+        4,
+        1,
+        7,
+        5,
+        9,
+        3,
+        8,
+        0,
+        2
+      ],
+      "hist_C020_05": [
+        1,
+        2,
+        6,
+        0,
+        5,
+        3,
+        4,
+        7,
+        9,
+        8
+      ],
+      "hist_C020_06": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C020_07": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "hist_C020_08": [
+        8,
+        3,
+        2,
+        4,
+        6,
+        9,
+        5,
+        0,
+        7,
+        1
+      ],
+      "hist_C020_09": [
+        3,
+        2,
+        6,
+        8,
+        9,
+        7,
+        0,
+        1,
+        5,
+        4
+      ],
+      "prism_user_163": [
+        8,
+        9,
+        4,
+        6,
+        1,
+        0,
+        2,
+        5,
+        3,
+        7
+      ],
+      "prism_user_28": [
+        1,
+        7,
+        8,
+        5,
+        3,
+        4,
+        0,
+        2,
+        6,
+        9
+      ],
+      "prism_user_6": [
+        4,
+        9,
+        2,
+        3,
+        0,
+        8,
+        5,
+        6,
+        7,
+        1
+      ],
+      "prism_user_70": [
+        6,
+        3,
+        7,
+        1,
+        2,
+        9,
+        8,
+        5,
+        0,
+        4
+      ],
+      "prism_user_62": [
+        8,
+        7,
+        3,
+        1,
+        2,
+        0,
+        9,
+        5,
+        4,
+        6
+      ],
+      "prism_user_57": [
+        2,
+        6,
+        0,
+        3,
+        9,
+        5,
+        1,
+        4,
+        7,
+        8
+      ],
+      "prism_user_35": [
+        4,
+        8,
+        5,
+        9,
+        1,
+        7,
+        6,
+        0,
+        3,
+        2
+      ],
+      "prism_user_26": [
+        2,
+        0,
+        6,
+        5,
+        9,
+        3,
+        8,
+        1,
+        4,
+        7
+      ],
+      "prism_user_173": [
+        4,
+        5,
+        1,
+        8,
+        6,
+        0,
+        9,
+        7,
+        2,
+        3
+      ],
+      "prism_user_139": [
+        1,
+        7,
+        0,
+        6,
+        5,
+        2,
+        9,
+        3,
+        8,
+        4
+      ]
+    },
+    "average_ranks": [
+      6.666666666666667,
+      5.4,
+      4.866666666666666,
+      4.166666666666667,
+      6.333333333333333,
+      6.566666666666666,
+      4.633333333333334,
+      5.8,
+      4.7,
+      5.866666666666666
+    ],
+    "aggregations": {
+      "borda_count": {
+        "ranking": [
+          3,
+          6,
+          8,
+          2,
+          1,
+          7,
+          9,
+          4,
+          5,
+          0
+        ],
+        "winner_idx": 3
+      },
+      "plurality": {
+        "ranking": [
+          3,
+          1,
+          8,
+          4,
+          6,
+          2,
+          0,
+          5,
+          7,
+          9
+        ],
+        "winner_idx": 3
+      },
+      "copeland": {
+        "ranking": [
+          3,
+          2,
+          6,
+          8,
+          9,
+          1,
+          7,
+          0,
+          5,
+          4
+        ],
+        "winner_idx": 3
+      },
+      "instant_runoff": {
+        "ranking": [
+          3,
+          1,
+          2,
+          6,
+          8,
+          4,
+          9,
+          7,
+          0,
+          5
+        ],
+        "winner_idx": 3
+      }
+    },
+    "config": {
+      "k_responses": 5,
+      "m_voters": 10,
+      "methods": [
+        "borda_count",
+        "plurality",
+        "copeland",
+        "instant_runoff"
+      ],
+      "sampling": "per_group",
+      "sampling_config": {
+        "per_group_counts": {
+          "16C": 10,
+          "20C": 10,
+          "original": 10
+        }
+      },
+      "jury_sources": [
+        {
+          "label": "16C",
+          "count": null
+        },
+        {
+          "label": "20C",
+          "count": null
+        },
+        {
+          "label": "original",
+          "count": 10
+        }
+      ],
+      "seed": 42,
+      "inference_llm": null
+    }
+  },
+  {
+    "timestamp": "2026-05-01T17:19:49.333071",
+    "query": "Should marriage be defined as a lifelong union between a man and a woman in which the husband is the head of the household?",
+    "query_id": 2,
+    "responses_source": "/home/XXXX-1/APA/experiments/query_responses.jsonl",
+    "responses": [
+      "No. Marriage is a partnership of equals freely entered into, and any definition that builds in the husband's headship or restricts the institution to opposite-sex couples enshrines hierarchies the law has rightly moved beyond.",
+      "Yes, plainly. Holy matrimony is the union of one man and one woman, ordered by God for the procreation and rearing of children, with the husband as head of the wife as Christ is head of the church. Any other arrangement is not marriage but a counterfeit.",
+      "Marriage is a civil contract whose terms should be set by the parties to it, not imposed by legislators. Sex of partners and division of household authority are matters for the spouses to negotiate, not for the state to prescribe.",
+      "The lifelong heterosexual union with the husband at its head is the form of marriage attested by scripture, by reason, and by the unbroken practice of every well-ordered commonwealth. Recent experiments to redefine it are unlikely to outlast the generation that authored them.",
+      "Lifelong commitment is a worthy ideal, but the rest of the formula \u2014 opposite-sex only, husband as head \u2014 is a contingent cultural arrangement that has done real harm to women and to those whose loves don't fit the template, and the law should not enforce it.",
+      "Marriage as the law of God describes it is between a man and a woman, and within that union the husband bears authority and the wife yields obedience. Modern attempts to recast this as oppression mistake the order of nature for an injustice.",
+      "Whether marriage is lifelong, between which sexes, and on what terms of authority are matters that have varied widely across times and places. There is no single 'definition' to recover, and pretending otherwise dignifies one historical arrangement as if it were timeless.",
+      "Yes \u2014 though I would soften 'head of the household' to a duty of leadership and provision rather than mere mastery. The companionate ideal of modern marriage is not wrong, but it works best when grounded in the older complementarity of husband and wife.",
+      "The state has an interest in stable households for the raising of children, but that interest does not require fixing one form as the only legal one. Same-sex couples, blended families, and egalitarian partnerships all serve that purpose, and the law should accommodate them.",
+      "Definitions of marriage should track what marriage is for: the procreation and education of children and the union of two lives. The lifelong opposite-sex form best serves these ends, and discarding it lightly is to discard the institution."
+    ],
+    "response_embeddings_hash": "c903540f494ddb12e9b143f4afa5aac8e60b4238e8bafefe91d71b426959287c",
+    "jury_manifest": {
+      "V": "/nas/XXXX-9/XXXX-1/APA/models/V_K8.pt",
+      "K": 8,
+      "sources": [
+        {
+          "origin": "prism",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt",
+          "n_loaded": 182
+        },
+        {
+          "origin": "adapted",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt",
+          "n_loaded": 20
+        }
+      ]
+    },
+    "sampled_user_ids": [
+      "hist_C016_00",
+      "hist_C016_01",
+      "hist_C016_02",
+      "hist_C016_03",
+      "hist_C016_04",
+      "hist_C016_05",
+      "hist_C016_06",
+      "hist_C016_07",
+      "hist_C016_08",
+      "hist_C016_09",
+      "hist_C020_00",
+      "hist_C020_01",
+      "hist_C020_02",
+      "hist_C020_03",
+      "hist_C020_04",
+      "hist_C020_05",
+      "hist_C020_06",
+      "hist_C020_07",
+      "hist_C020_08",
+      "hist_C020_09",
+      "prism_user_163",
+      "prism_user_28",
+      "prism_user_6",
+      "prism_user_70",
+      "prism_user_62",
+      "prism_user_57",
+      "prism_user_35",
+      "prism_user_26",
+      "prism_user_173",
+      "prism_user_139"
+    ],
+    "sampled_user_metadata": {
+      "hist_C016_00": {
+        "period": "16C",
+        "ID": "hist_C016_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_01": {
+        "period": "16C",
+        "ID": "hist_C016_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_02": {
+        "period": "16C",
+        "ID": "hist_C016_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_03": {
+        "period": "16C",
+        "ID": "hist_C016_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_04": {
+        "period": "16C",
+        "ID": "hist_C016_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_05": {
+        "period": "16C",
+        "ID": "hist_C016_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_06": {
+        "period": "16C",
+        "ID": "hist_C016_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_07": {
+        "period": "16C",
+        "ID": "hist_C016_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_08": {
+        "period": "16C",
+        "ID": "hist_C016_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_09": {
+        "period": "16C",
+        "ID": "hist_C016_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_00": {
+        "period": "20C",
+        "ID": "hist_C020_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_01": {
+        "period": "20C",
+        "ID": "hist_C020_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_02": {
+        "period": "20C",
+        "ID": "hist_C020_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_03": {
+        "period": "20C",
+        "ID": "hist_C020_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_04": {
+        "period": "20C",
+        "ID": "hist_C020_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_05": {
+        "period": "20C",
+        "ID": "hist_C020_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_06": {
+        "period": "20C",
+        "ID": "hist_C020_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_07": {
+        "period": "20C",
+        "ID": "hist_C020_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_08": {
+        "period": "20C",
+        "ID": "hist_C020_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_09": {
+        "period": "20C",
+        "ID": "hist_C020_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "prism_user_163": {
+        "period": "original",
+        "ID": "prism_user_163",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_28": {
+        "period": "original",
+        "ID": "prism_user_28",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_6": {
+        "period": "original",
+        "ID": "prism_user_6",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_70": {
+        "period": "original",
+        "ID": "prism_user_70",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_62": {
+        "period": "original",
+        "ID": "prism_user_62",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_57": {
+        "period": "original",
+        "ID": "prism_user_57",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_35": {
+        "period": "original",
+        "ID": "prism_user_35",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_26": {
+        "period": "original",
+        "ID": "prism_user_26",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_173": {
+        "period": "original",
+        "ID": "prism_user_173",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_139": {
+        "period": "original",
+        "ID": "prism_user_139",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      }
+    },
+    "per_voter_scores": {
+      "hist_C016_00": [
+        1.2894072532653809,
+        0.2691837251186371,
+        1.5221601724624634,
+        0.679390013217926,
+        0.7522592544555664,
+        1.1201434135437012,
+        1.0133439302444458,
+        1.1790281534194946,
+        1.940570592880249,
+        1.1451002359390259
+      ],
+      "hist_C016_01": [
+        2.592876672744751,
+        1.0951275825500488,
+        2.4013495445251465,
+        2.126465082168579,
+        2.979362964630127,
+        2.107088327407837,
+        2.028904676437378,
+        3.0752968788146973,
+        2.6720054149627686,
+        2.2920737266540527
+      ],
+      "hist_C016_02": [
+        2.5923221111297607,
+        1.094689965248108,
+        2.400963544845581,
+        2.1257529258728027,
+        2.978296995162964,
+        2.1066644191741943,
+        2.028456687927246,
+        3.0743892192840576,
+        2.6717283725738525,
+        2.291541814804077
+      ],
+      "hist_C016_03": [
+        1.289319634437561,
+        0.2691378593444824,
+        1.5221002101898193,
+        0.6792977452278137,
+        0.7521224021911621,
+        1.12007474899292,
+        1.0132761001586914,
+        1.1789120435714722,
+        1.940510630607605,
+        1.1450269222259521
+      ],
+      "hist_C016_04": [
+        1.2892990112304688,
+        0.2691391110420227,
+        1.5220834016799927,
+        0.6792846918106079,
+        0.7521072030067444,
+        1.1200625896453857,
+        1.0132471323013306,
+        1.1788794994354248,
+        1.9404966831207275,
+        1.1450095176696777
+      ],
+      "hist_C016_05": [
+        2.593005657196045,
+        1.0951340198516846,
+        2.401426076889038,
+        2.1265182495117188,
+        2.979475736618042,
+        2.1071829795837402,
+        2.02898907661438,
+        3.0753886699676514,
+        2.6721084117889404,
+        2.292147397994995
+      ],
+      "hist_C016_06": [
+        2.591320037841797,
+        1.0948103666305542,
+        2.3999125957489014,
+        2.124178409576416,
+        2.976740837097168,
+        2.105410575866699,
+        2.0273358821868896,
+        3.073634147644043,
+        2.6694588661193848,
+        2.2903287410736084
+      ],
+      "hist_C016_07": [
+        1.289331078529358,
+        0.2691401541233063,
+        1.522111177444458,
+        0.6793109774589539,
+        0.7521352171897888,
+        1.1200875043869019,
+        1.0132867097854614,
+        1.178919792175293,
+        1.9405300617218018,
+        1.145037055015564
+      ],
+      "hist_C016_08": [
+        -0.03805730864405632,
+        0.4297712743282318,
+        0.5593417286872864,
+        -0.6186433434486389,
+        0.2563996911048889,
+        -0.3205505311489105,
+        0.2871774137020111,
+        0.6349553465843201,
+        -0.2141759842634201,
+        0.7000093460083008
+      ],
+      "hist_C016_09": [
+        0.03467075154185295,
+        -1.5019395351409912,
+        -0.11320264637470245,
+        -0.8174348473548889,
+        -0.35391291975975037,
+        -0.5239813327789307,
+        -0.8706571459770203,
+        -0.35122525691986084,
+        0.02529805339872837,
+        -0.1419103741645813
+      ],
+      "hist_C020_00": [
+        2.5930168628692627,
+        1.095129370689392,
+        2.4014322757720947,
+        2.126523971557617,
+        2.979482412338257,
+        2.1071908473968506,
+        2.0289978981018066,
+        3.075399160385132,
+        2.672119379043579,
+        2.2921526432037354
+      ],
+      "hist_C020_01": [
+        2.593020439147949,
+        1.095136046409607,
+        2.4014334678649902,
+        2.1265268325805664,
+        2.9794905185699463,
+        2.107191562652588,
+        2.0290000438690186,
+        3.0754082202911377,
+        2.6721138954162598,
+        2.2921552658081055
+      ],
+      "hist_C020_02": [
+        -0.5331181883811951,
+        0.9079442620277405,
+        0.5343416929244995,
+        0.6489676833152771,
+        0.09887515008449554,
+        -0.1824580281972885,
+        -0.07359697669744492,
+        0.6216796040534973,
+        0.189784437417984,
+        0.45853978395462036
+      ],
+      "hist_C020_03": [
+        -0.0380803681910038,
+        0.4297696352005005,
+        0.5593313574790955,
+        -0.6186534762382507,
+        0.25638654828071594,
+        -0.3205636143684387,
+        0.28716471791267395,
+        0.6349301338195801,
+        -0.21418313682079315,
+        0.7000032067298889
+      ],
+      "hist_C020_04": [
+        -0.5334569215774536,
+        0.9076845645904541,
+        0.5340211391448975,
+        0.64874666929245,
+        0.09856613725423813,
+        -0.18277059495449066,
+        -0.07395163178443909,
+        0.6214016675949097,
+        0.1894730031490326,
+        0.45824846625328064
+      ],
+      "hist_C020_05": [
+        0.03457118570804596,
+        -1.502031922340393,
+        -0.11329679191112518,
+        -0.8175447583198547,
+        -0.3540409505367279,
+        -0.5240796804428101,
+        -0.8707668781280518,
+        -0.35135793685913086,
+        0.02519979700446129,
+        -0.1420024335384369
+      ],
+      "hist_C020_06": [
+        2.592928409576416,
+        1.0950896739959717,
+        2.401371955871582,
+        2.126429319381714,
+        2.979360818862915,
+        2.1071174144744873,
+        2.0289337635040283,
+        3.0752928256988525,
+        2.6720473766326904,
+        2.2920868396759033
+      ],
+      "hist_C020_07": [
+        2.5929524898529053,
+        1.0950884819030762,
+        2.4013888835906982,
+        2.126452922821045,
+        2.9793732166290283,
+        2.107142210006714,
+        2.0289478302001953,
+        3.075305700302124,
+        2.672083616256714,
+        2.2920961380004883
+      ],
+      "hist_C020_08": [
+        -0.03806142881512642,
+        0.4297744333744049,
+        0.5593283772468567,
+        -0.6186648011207581,
+        0.2563657760620117,
+        -0.32056114077568054,
+        0.2871580123901367,
+        0.6349475383758545,
+        -0.2142060399055481,
+        0.6999820470809937
+      ],
+      "hist_C020_09": [
+        2.5923922061920166,
+        1.0947338342666626,
+        2.401010751724243,
+        2.125830888748169,
+        2.9784162044525146,
+        2.106717824935913,
+        2.0285112857818604,
+        3.074490785598755,
+        2.6717686653137207,
+        2.2916033267974854
+      ],
+      "prism_user_163": [
+        -0.01996157318353653,
+        -0.004324947018176317,
+        -0.009356489405035973,
+        0.002275446429848671,
+        -0.003026961348950863,
+        -0.00448016868904233,
+        -0.017894893884658813,
+        -0.03259323537349701,
+        0.009480629116296768,
+        -0.004572293255478144
+      ],
+      "prism_user_28": [
+        -0.017192138358950615,
+        -0.04168765991926193,
+        -0.026156775653362274,
+        -0.04513891413807869,
+        -0.04587694630026817,
+        -0.03058330900967121,
+        -0.03445477783679962,
+        -0.01827489212155342,
+        -0.03093332052230835,
+        -0.033266499638557434
+      ],
+      "prism_user_6": [
+        0.07622914016246796,
+        0.07673387229442596,
+        0.0861552283167839,
+        0.0836959108710289,
+        0.09279815107584,
+        0.08307074010372162,
+        0.09969028830528259,
+        0.07646533101797104,
+        0.092292919754982,
+        0.08539896458387375
+      ],
+      "prism_user_70": [
+        -0.015280836261808872,
+        -0.026713445782661438,
+        -0.018604911863803864,
+        -0.00805053859949112,
+        -0.011467371135950089,
+        -0.020563915371894836,
+        -0.019140804186463356,
+        0.0019333800300955772,
+        -0.01844431646168232,
+        -0.015283028595149517
+      ],
+      "prism_user_62": [
+        -0.0280788391828537,
+        -0.04010298475623131,
+        -0.042816586792469025,
+        -0.033842749893665314,
+        -0.03890884295105934,
+        -0.029185999184846878,
+        -0.03460174426436424,
+        -0.03739197924733162,
+        -0.034942641854286194,
+        -0.04077857360243797
+      ],
+      "prism_user_57": [
+        -0.02025853469967842,
+        -0.034748099744319916,
+        -0.029697760939598083,
+        -0.017726056277751923,
+        -0.011495333164930344,
+        -0.025570690631866455,
+        -0.027327483519911766,
+        -0.0250634104013443,
+        -0.028933130204677582,
+        -0.019764645025134087
+      ],
+      "prism_user_35": [
+        0.009617574512958527,
+        0.04828397557139397,
+        0.030147811397910118,
+        0.02695281431078911,
+        0.02104024402797222,
+        0.02252534218132496,
+        0.017101049423217773,
+        0.015689093619585037,
+        0.02724762074649334,
+        0.024601101875305176
+      ],
+      "prism_user_26": [
+        -0.007963580079376698,
+        -0.0074975984171032906,
+        -0.011797008104622364,
+        -0.010817592963576317,
+        -0.003519467543810606,
+        -0.008648977614939213,
+        -0.019755177199840546,
+        -0.0173310786485672,
+        -0.010858144611120224,
+        -0.00971239060163498
+      ],
+      "prism_user_173": [
+        -0.045332953333854675,
+        0.02017730101943016,
+        -0.015568612143397331,
+        -0.0221821628510952,
+        -0.035972774028778076,
+        -0.024575743824243546,
+        -0.04956468567252159,
+        -0.04982035607099533,
+        -0.018570248037576675,
+        -0.021915089339017868
+      ],
+      "prism_user_139": [
+        -0.07045505195856094,
+        -0.07890854775905609,
+        -0.08919956535100937,
+        -0.0526447668671608,
+        -0.07889841496944427,
+        -0.06528892368078232,
+        -0.08430161327123642,
+        -0.08460663259029388,
+        -0.07212553918361664,
+        -0.08385055512189865
+      ]
+    },
+    "per_voter_rankings": {
+      "hist_C016_00": [
+        8,
+        2,
+        0,
+        7,
+        9,
+        5,
+        6,
+        4,
+        3,
+        1
+      ],
+      "hist_C016_01": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C016_02": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C016_03": [
+        8,
+        2,
+        0,
+        7,
+        9,
+        5,
+        6,
+        4,
+        3,
+        1
+      ],
+      "hist_C016_04": [
+        8,
+        2,
+        0,
+        7,
+        9,
+        5,
+        6,
+        4,
+        3,
+        1
+      ],
+      "hist_C016_05": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C016_06": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C016_07": [
+        8,
+        2,
+        0,
+        7,
+        9,
+        5,
+        6,
+        4,
+        3,
+        1
+      ],
+      "hist_C016_08": [
+        9,
+        7,
+        2,
+        1,
+        6,
+        4,
+        0,
+        8,
+        5,
+        3
+      ],
+      "hist_C016_09": [
+        0,
+        8,
+        2,
+        9,
+        7,
+        4,
+        5,
+        3,
+        6,
+        1
+      ],
+      "hist_C020_00": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C020_01": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C020_02": [
+        1,
+        3,
+        7,
+        2,
+        9,
+        8,
+        4,
+        6,
+        5,
+        0
+      ],
+      "hist_C020_03": [
+        9,
+        7,
+        2,
+        1,
+        6,
+        4,
+        0,
+        8,
+        5,
+        3
+      ],
+      "hist_C020_04": [
+        1,
+        3,
+        7,
+        2,
+        9,
+        8,
+        4,
+        6,
+        5,
+        0
+      ],
+      "hist_C020_05": [
+        0,
+        8,
+        2,
+        9,
+        7,
+        4,
+        5,
+        3,
+        6,
+        1
+      ],
+      "hist_C020_06": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C020_07": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "hist_C020_08": [
+        9,
+        7,
+        2,
+        1,
+        6,
+        4,
+        0,
+        8,
+        5,
+        3
+      ],
+      "hist_C020_09": [
+        7,
+        4,
+        8,
+        0,
+        2,
+        9,
+        3,
+        5,
+        6,
+        1
+      ],
+      "prism_user_163": [
+        8,
+        3,
+        4,
+        1,
+        5,
+        9,
+        2,
+        6,
+        0,
+        7
+      ],
+      "prism_user_28": [
+        0,
+        7,
+        2,
+        5,
+        8,
+        9,
+        6,
+        1,
+        3,
+        4
+      ],
+      "prism_user_6": [
+        6,
+        4,
+        8,
+        2,
+        9,
+        3,
+        5,
+        1,
+        7,
+        0
+      ],
+      "prism_user_70": [
+        7,
+        3,
+        4,
+        0,
+        9,
+        8,
+        2,
+        6,
+        5,
+        1
+      ],
+      "prism_user_62": [
+        0,
+        5,
+        3,
+        6,
+        8,
+        7,
+        4,
+        1,
+        9,
+        2
+      ],
+      "prism_user_57": [
+        4,
+        3,
+        9,
+        0,
+        7,
+        5,
+        6,
+        8,
+        2,
+        1
+      ],
+      "prism_user_35": [
+        1,
+        2,
+        8,
+        3,
+        9,
+        5,
+        4,
+        6,
+        7,
+        0
+      ],
+      "prism_user_26": [
+        4,
+        1,
+        0,
+        5,
+        9,
+        3,
+        8,
+        2,
+        7,
+        6
+      ],
+      "prism_user_173": [
+        1,
+        2,
+        8,
+        9,
+        3,
+        5,
+        4,
+        0,
+        6,
+        7
+      ],
+      "prism_user_139": [
+        3,
+        5,
+        0,
+        8,
+        4,
+        1,
+        9,
+        6,
+        7,
+        2
+      ]
+    },
+    "average_ranks": [
+      4.8,
+      7.4,
+      4.6,
+      6.3,
+      4.666666666666667,
+      6.866666666666666,
+      7.6,
+      3.9,
+      3.8666666666666667,
+      5.0
+    ],
+    "aggregations": {
+      "borda_count": {
+        "ranking": [
+          8,
+          7,
+          2,
+          4,
+          0,
+          9,
+          3,
+          5,
+          1,
+          6
+        ],
+        "winner_idx": 8
+      },
+      "plurality": {
+        "ranking": [
+          7,
+          8,
+          0,
+          1,
+          9,
+          4,
+          3,
+          6,
+          2,
+          5
+        ],
+        "winner_idx": 7
+      },
+      "copeland": {
+        "ranking": [
+          7,
+          4,
+          8,
+          0,
+          2,
+          9,
+          3,
+          5,
+          6,
+          1
+        ],
+        "winner_idx": 7
+      },
+      "instant_runoff": {
+        "ranking": [
+          7,
+          4,
+          8,
+          0,
+          2,
+          9,
+          3,
+          5,
+          6,
+          1
+        ],
+        "winner_idx": 7
+      }
+    },
+    "config": {
+      "k_responses": 5,
+      "m_voters": 10,
+      "methods": [
+        "borda_count",
+        "plurality",
+        "copeland",
+        "instant_runoff"
+      ],
+      "sampling": "per_group",
+      "sampling_config": {
+        "per_group_counts": {
+          "16C": 10,
+          "20C": 10,
+          "original": 10
+        }
+      },
+      "jury_sources": [
+        {
+          "label": "16C",
+          "count": null
+        },
+        {
+          "label": "20C",
+          "count": null
+        },
+        {
+          "label": "original",
+          "count": 10
+        }
+      ],
+      "seed": 42,
+      "inference_llm": null
+    }
+  },
+  {
+    "timestamp": "2026-05-01T17:19:49.696191",
+    "query": "Should those accused of witchcraft be tried and punished by the state?",
+    "query_id": 3,
+    "responses_source": "/home/XXXX-1/APA/experiments/query_responses.jsonl",
+    "responses": [
+      "Yes. The maleficent arts are a real and grievous evil; the magistrate who fails to root them out neglects his charge to defend his people from harm both temporal and spiritual.",
+      "No. The very category of 'witchcraft' is a superstition that has cost countless innocent lives. No modern legal system should entertain such charges; if a real crime has been committed, prosecute that crime.",
+      "Witchcraft is the gravest of crimes, for it joins murder and idolatry in a single act, and the law of God plainly commands that such offenders be put to death by the civil sword.",
+      "Trials for witchcraft are an embarrassing chapter of our history that we should under no circumstances revive. The accusations almost always targeted vulnerable women, and the 'evidence' was always nonsense.",
+      "Where there is genuine evidence of poisoning, fraud, or harm done under the pretext of witchcraft, the state should prosecute those underlying crimes; but the supernatural element should never be the basis of a criminal charge.",
+      "While we may now smile at the credulity of our ancestors, in their time and place the witch-trials were a reasonable response to what they sincerely believed to be a real and dangerous threat to the commonwealth.",
+      "Yes, and with the utmost severity. To suffer a witch to live is to invite the wrath of heaven upon the whole community; the magistrate's first duty is to purge the land of such pollution.",
+      "Absolutely not. State prosecution of witchcraft is incompatible with religious liberty, due process, and basic respect for evidence; the practice belongs in the same historical dustbin as ordeal and trial by combat.",
+      "The proper response to claims of witchcraft is medical and psychological evaluation of the accused and the accuser, not criminal prosecution; what once looked like sorcery we now understand as illness, malice, or coincidence.",
+      "No \u2014 and the witch-hunt is one of the great cautionary tales of why religious anxieties must never be permitted to override the ordinary protections of evidence and procedure that the criminal law affords every accused person."
+    ],
+    "response_embeddings_hash": "1c371f2ef237e1fa1b24859697a5d347290fb87bfe46d81ec1a7d1ea202cc035",
+    "jury_manifest": {
+      "V": "/nas/XXXX-9/XXXX-1/APA/models/V_K8.pt",
+      "K": 8,
+      "sources": [
+        {
+          "origin": "prism",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt",
+          "n_loaded": 182
+        },
+        {
+          "origin": "adapted",
+          "path": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt",
+          "n_loaded": 20
+        }
+      ]
+    },
+    "sampled_user_ids": [
+      "hist_C016_00",
+      "hist_C016_01",
+      "hist_C016_02",
+      "hist_C016_03",
+      "hist_C016_04",
+      "hist_C016_05",
+      "hist_C016_06",
+      "hist_C016_07",
+      "hist_C016_08",
+      "hist_C016_09",
+      "hist_C020_00",
+      "hist_C020_01",
+      "hist_C020_02",
+      "hist_C020_03",
+      "hist_C020_04",
+      "hist_C020_05",
+      "hist_C020_06",
+      "hist_C020_07",
+      "hist_C020_08",
+      "hist_C020_09",
+      "prism_user_163",
+      "prism_user_28",
+      "prism_user_6",
+      "prism_user_70",
+      "prism_user_62",
+      "prism_user_57",
+      "prism_user_35",
+      "prism_user_26",
+      "prism_user_173",
+      "prism_user_139"
+    ],
+    "sampled_user_metadata": {
+      "hist_C016_00": {
+        "period": "16C",
+        "ID": "hist_C016_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_01": {
+        "period": "16C",
+        "ID": "hist_C016_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_02": {
+        "period": "16C",
+        "ID": "hist_C016_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_03": {
+        "period": "16C",
+        "ID": "hist_C016_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_04": {
+        "period": "16C",
+        "ID": "hist_C016_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_05": {
+        "period": "16C",
+        "ID": "hist_C016_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_06": {
+        "period": "16C",
+        "ID": "hist_C016_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_07": {
+        "period": "16C",
+        "ID": "hist_C016_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_08": {
+        "period": "16C",
+        "ID": "hist_C016_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C016_09": {
+        "period": "16C",
+        "ID": "hist_C016_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_00": {
+        "period": "20C",
+        "ID": "hist_C020_00",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_01": {
+        "period": "20C",
+        "ID": "hist_C020_01",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_02": {
+        "period": "20C",
+        "ID": "hist_C020_02",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_03": {
+        "period": "20C",
+        "ID": "hist_C020_03",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_04": {
+        "period": "20C",
+        "ID": "hist_C020_04",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_05": {
+        "period": "20C",
+        "ID": "hist_C020_05",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_06": {
+        "period": "20C",
+        "ID": "hist_C020_06",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_07": {
+        "period": "20C",
+        "ID": "hist_C020_07",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_08": {
+        "period": "20C",
+        "ID": "hist_C020_08",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "hist_C020_09": {
+        "period": "20C",
+        "ID": "hist_C020_09",
+        "origin": "adapted",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_adapted_hist_C016_C020_filtered.pt"
+      },
+      "prism_user_163": {
+        "period": "original",
+        "ID": "prism_user_163",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_28": {
+        "period": "original",
+        "ID": "prism_user_28",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_6": {
+        "period": "original",
+        "ID": "prism_user_6",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_70": {
+        "period": "original",
+        "ID": "prism_user_70",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_62": {
+        "period": "original",
+        "ID": "prism_user_62",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_57": {
+        "period": "original",
+        "ID": "prism_user_57",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_35": {
+        "period": "original",
+        "ID": "prism_user_35",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_26": {
+        "period": "original",
+        "ID": "prism_user_26",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_173": {
+        "period": "original",
+        "ID": "prism_user_173",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      },
+      "prism_user_139": {
+        "period": "original",
+        "ID": "prism_user_139",
+        "origin": "prism",
+        "checkpoint": "/nas/XXXX-9/XXXX-1/APA/models/W_seen_K8.pt"
+      }
+    },
+    "per_voter_scores": {
+      "hist_C016_00": [
+        1.3115019798278809,
+        0.21795232594013214,
+        -0.3464588224887848,
+        -0.24237945675849915,
+        1.0356611013412476,
+        0.6595175862312317,
+        0.44523513317108154,
+        0.4522901773452759,
+        0.2826945185661316,
+        0.11290271580219269
+      ],
+      "hist_C016_01": [
+        1.0097126960754395,
+        2.1805343627929688,
+        0.3352365791797638,
+        1.2206987142562866,
+        1.0890110731124878,
+        1.3091837167739868,
+        1.203814148902893,
+        0.9452118277549744,
+        1.0644049644470215,
+        0.8960722088813782
+      ],
+      "hist_C016_02": [
+        1.0099241733551025,
+        2.1795618534088135,
+        0.33488669991493225,
+        1.2199993133544922,
+        1.0890560150146484,
+        1.3088898658752441,
+        1.2034400701522827,
+        0.9450209140777588,
+        1.064042568206787,
+        0.8957046270370483
+      ],
+      "hist_C016_03": [
+        1.3115081787109375,
+        0.21783843636512756,
+        -0.34649720788002014,
+        -0.24245968461036682,
+        1.035649299621582,
+        0.6594745516777039,
+        0.4451873004436493,
+        0.4522574841976166,
+        0.2826496660709381,
+        0.1128549724817276
+      ],
+      "hist_C016_04": [
+        1.3114945888519287,
+        0.21783320605754852,
+        -0.34649375081062317,
+        -0.2424645721912384,
+        1.035634994506836,
+        0.6594660878181458,
+        0.44517865777015686,
+        0.45225778222084045,
+        0.28262564539909363,
+        0.11285674571990967
+      ],
+      "hist_C016_05": [
+        1.009758472442627,
+        2.180605411529541,
+        0.33525368571281433,
+        1.2207800149917603,
+        1.089078664779663,
+        1.3092340230941772,
+        1.2038428783416748,
+        0.9452832937240601,
+        1.0644569396972656,
+        0.8961226940155029
+      ],
+      "hist_C016_06": [
+        1.0091218948364258,
+        2.179297685623169,
+        0.3351997435092926,
+        1.220828890800476,
+        1.0888805389404297,
+        1.308021903038025,
+        1.2028932571411133,
+        0.944852888584137,
+        1.0641636848449707,
+        0.895582377910614
+      ],
+      "hist_C016_07": [
+        1.311518907546997,
+        0.21784302592277527,
+        -0.34649449586868286,
+        -0.24246129393577576,
+        1.0356557369232178,
+        0.659483790397644,
+        0.4451948404312134,
+        0.452263206243515,
+        0.28265219926834106,
+        0.11286032944917679
+      ],
+      "hist_C016_08": [
+        -0.5797318816184998,
+        0.2952597737312317,
+        -0.8176973462104797,
+        0.5783526301383972,
+        -0.39057186245918274,
+        -0.09726353734731674,
+        -0.4183028042316437,
+        -0.08867178857326508,
+        0.5913457274436951,
+        -0.5363247990608215
+      ],
+      "hist_C016_09": [
+        -0.22521495819091797,
+        -0.20819254219532013,
+        -0.5872742533683777,
+        0.8718005418777466,
+        0.15482208132743835,
+        0.406574547290802,
+        -0.6040696501731873,
+        0.5288367867469788,
+        0.35652413964271545,
+        0.15398211777210236
+      ],
+      "hist_C020_00": [
+        1.0097649097442627,
+        2.1806061267852783,
+        0.33524927496910095,
+        1.2207767963409424,
+        1.0890852212905884,
+        1.30923593044281,
+        1.2038440704345703,
+        0.9452833533287048,
+        1.0644581317901611,
+        0.8961214423179626
+      ],
+      "hist_C020_01": [
+        1.0097591876983643,
+        2.1806182861328125,
+        0.33525559306144714,
+        1.2207903861999512,
+        1.0890843868255615,
+        1.3092366456985474,
+        1.2038469314575195,
+        0.9452860355377197,
+        1.0644643306732178,
+        0.8961263298988342
+      ],
+      "hist_C020_02": [
+        -0.001340521965175867,
+        0.33811232447624207,
+        -0.05461950972676277,
+        -0.6651502251625061,
+        -0.4463028311729431,
+        0.11418016999959946,
+        0.449495404958725,
+        -0.6212759613990784,
+        -0.17456546425819397,
+        -0.26530399918556213
+      ],
+      "hist_C020_03": [
+        -0.5797415375709534,
+        0.29524460434913635,
+        -0.8177070617675781,
+        0.5783352255821228,
+        -0.3905896842479706,
+        -0.09726865589618683,
+        -0.41831162571907043,
+        -0.08867992460727692,
+        0.5913333892822266,
+        -0.5363351106643677
+      ],
+      "hist_C020_04": [
+        -0.0016494332812726498,
+        0.33785632252693176,
+        -0.054910995066165924,
+        -0.6655166745185852,
+        -0.4465981125831604,
+        0.11388443410396576,
+        0.4492204785346985,
+        -0.6216073036193848,
+        -0.17495262622833252,
+        -0.2655940055847168
+      ],
+      "hist_C020_05": [
+        -0.22525934875011444,
+        -0.20828481018543243,
+        -0.5873083472251892,
+        0.8717806339263916,
+        0.15478572249412537,
+        0.4065391421318054,
+        -0.6041364669799805,
+        0.5288193225860596,
+        0.3564927875995636,
+        0.15395286679267883
+      ],
+      "hist_C020_06": [
+        1.0097501277923584,
+        2.180507183074951,
+        0.33520784974098206,
+        1.220715880393982,
+        1.0890599489212036,
+        1.3091912269592285,
+        1.2037917375564575,
+        0.9452502727508545,
+        1.0644233226776123,
+        0.8960720300674438
+      ],
+      "hist_C020_07": [
+        1.0097795724868774,
+        2.180509567260742,
+        0.33521556854248047,
+        1.2207045555114746,
+        1.0890824794769287,
+        1.309203863143921,
+        1.2038066387176514,
+        0.9452589750289917,
+        1.0644193887710571,
+        0.8960828185081482
+      ],
+      "hist_C020_08": [
+        -0.5797244310379028,
+        0.29525473713874817,
+        -0.8176792860031128,
+        0.5783640146255493,
+        -0.39055246114730835,
+        -0.09727738052606583,
+        -0.41830313205718994,
+        -0.08866861462593079,
+        0.5913429260253906,
+        -0.5363169312477112
+      ],
+      "hist_C020_09": [
+        1.009908676147461,
+        2.17966628074646,
+        0.33492276072502136,
+        1.220076322555542,
+        1.0890592336654663,
+        1.308924674987793,
+        1.2034804821014404,
+        0.94504714012146,
+        1.0640835762023926,
+        0.8957462906837463
+      ],
+      "prism_user_163": [
+        -0.007889706641435623,
+        -0.011741049587726593,
+        -0.007080946583300829,
+        -0.025175608694553375,
+        -0.020713139325380325,
+        0.0002535763196647167,
+        -0.006020287983119488,
+        -0.004289063159376383,
+        -0.02721562422811985,
+        -0.004176474176347256
+      ],
+      "prism_user_28": [
+        -0.021998019888997078,
+        -0.03664455935359001,
+        -0.04771581292152405,
+        -0.034143008291721344,
+        -0.00907323881983757,
+        -0.04027535766363144,
+        -0.04182405397295952,
+        -0.03142332285642624,
+        -0.03850694000720978,
+        -0.038580358028411865
+      ],
+      "prism_user_6": [
+        0.07875539362430573,
+        0.06753682345151901,
+        0.07512602210044861,
+        0.06910766661167145,
+        0.059548269957304,
+        0.08226653933525085,
+        0.0823599100112915,
+        0.070152647793293,
+        0.0939825028181076,
+        0.0691617950797081
+      ],
+      "prism_user_70": [
+        -0.028742942959070206,
+        -0.013133760541677475,
+        -0.0352315753698349,
+        -0.03319938853383064,
+        -0.023914607241749763,
+        -0.026355640962719917,
+        -0.023318223655223846,
+        -0.036184459924697876,
+        -0.031079648062586784,
+        -0.030919887125492096
+      ],
+      "prism_user_62": [
+        -0.03240907937288284,
+        -0.039763644337654114,
+        -0.04006996750831604,
+        -0.04853306710720062,
+        -0.02603723853826523,
+        -0.04431496560573578,
+        -0.040482401847839355,
+        -0.03754204511642456,
+        -0.052637387067079544,
+        -0.038237184286117554
+      ],
+      "prism_user_57": [
+        -0.02753233164548874,
+        -0.006664988584816456,
+        -0.003663294482976198,
+        0.016669515520334244,
+        -0.018345901742577553,
+        -0.0011548912152647972,
+        -0.015940099954605103,
+        -1.1855736374855042e-06,
+        0.0029516341164708138,
+        0.0012554372660815716
+      ],
+      "prism_user_35": [
+        0.023132607340812683,
+        0.024306397885084152,
+        0.02777903527021408,
+        0.008423944935202599,
+        0.010469617322087288,
+        0.019950108602643013,
+        0.029209397733211517,
+        0.016207972541451454,
+        0.009814763441681862,
+        0.02016516774892807
+      ],
+      "prism_user_26": [
+        -0.014564125798642635,
+        0.002836004365235567,
+        0.0018419893458485603,
+        0.01208936795592308,
+        -0.008760721422731876,
+        -0.0019603795371949673,
+        -0.00835180189460516,
+        0.006209092680364847,
+        -0.008014002814888954,
+        0.005345623940229416
+      ],
+      "prism_user_173": [
+        -0.015477711334824562,
+        -0.013836810365319252,
+        -0.0019015956204384565,
+        -0.026966266334056854,
+        -0.02606876753270626,
+        -0.01624634489417076,
+        -0.01124427281320095,
+        -0.009994075633585453,
+        -0.04564186558127403,
+        -0.007591492496430874
+      ],
+      "prism_user_139": [
+        -0.05825475603342056,
+        -0.06867329031229019,
+        -0.04871748387813568,
+        -0.07661906629800797,
+        -0.051941826939582825,
+        -0.0633707344532013,
+        -0.06064002588391304,
+        -0.06054811179637909,
+        -0.087302565574646,
+        -0.05025335028767586
+      ]
+    },
+    "per_voter_rankings": {
+      "hist_C016_00": [
+        0,
+        4,
+        5,
+        7,
+        6,
+        8,
+        1,
+        9,
+        3,
+        2
+      ],
+      "hist_C016_01": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C016_02": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C016_03": [
+        0,
+        4,
+        5,
+        7,
+        6,
+        8,
+        1,
+        9,
+        3,
+        2
+      ],
+      "hist_C016_04": [
+        0,
+        4,
+        5,
+        7,
+        6,
+        8,
+        1,
+        9,
+        3,
+        2
+      ],
+      "hist_C016_05": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C016_06": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C016_07": [
+        0,
+        4,
+        5,
+        7,
+        6,
+        8,
+        1,
+        9,
+        3,
+        2
+      ],
+      "hist_C016_08": [
+        8,
+        3,
+        1,
+        7,
+        5,
+        4,
+        6,
+        9,
+        0,
+        2
+      ],
+      "hist_C016_09": [
+        3,
+        7,
+        5,
+        8,
+        4,
+        9,
+        1,
+        0,
+        2,
+        6
+      ],
+      "hist_C020_00": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C020_01": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C020_02": [
+        6,
+        1,
+        5,
+        0,
+        2,
+        8,
+        9,
+        4,
+        7,
+        3
+      ],
+      "hist_C020_03": [
+        8,
+        3,
+        1,
+        7,
+        5,
+        4,
+        6,
+        9,
+        0,
+        2
+      ],
+      "hist_C020_04": [
+        6,
+        1,
+        5,
+        0,
+        2,
+        8,
+        9,
+        4,
+        7,
+        3
+      ],
+      "hist_C020_05": [
+        3,
+        7,
+        5,
+        8,
+        4,
+        9,
+        1,
+        0,
+        2,
+        6
+      ],
+      "hist_C020_06": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C020_07": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "hist_C020_08": [
+        8,
+        3,
+        1,
+        7,
+        5,
+        4,
+        6,
+        9,
+        0,
+        2
+      ],
+      "hist_C020_09": [
+        1,
+        5,
+        3,
+        6,
+        4,
+        8,
+        0,
+        7,
+        9,
+        2
+      ],
+      "prism_user_163": [
+        5,
+        9,
+        7,
+        6,
+        2,
+        0,
+        1,
+        4,
+        3,
+        8
+      ],
+      "prism_user_28": [
+        4,
+        0,
+        7,
+        3,
+        1,
+        8,
+        9,
+        5,
+        6,
+        2
+      ],
+      "prism_user_6": [
+        8,
+        6,
+        5,
+        0,
+        2,
+        7,
+        9,
+        3,
+        1,
+        4
+      ],
+      "prism_user_70": [
+        1,
+        6,
+        4,
+        5,
+        0,
+        9,
+        8,
+        3,
+        2,
+        7
+      ],
+      "prism_user_62": [
+        4,
+        0,
+        7,
+        9,
+        1,
+        2,
+        6,
+        5,
+        3,
+        8
+      ],
+      "prism_user_57": [
+        3,
+        8,
+        9,
+        7,
+        5,
+        2,
+        1,
+        6,
+        4,
+        0
+      ],
+      "prism_user_35": [
+        6,
+        2,
+        1,
+        0,
+        9,
+        5,
+        7,
+        4,
+        8,
+        3
+      ],
+      "prism_user_26": [
+        3,
+        7,
+        9,
+        1,
+        2,
+        5,
+        8,
+        6,
+        4,
+        0
+      ],
+      "prism_user_173": [
+        2,
+        9,
+        7,
+        6,
+        1,
+        0,
+        5,
+        4,
+        3,
+        8
+      ],
+      "prism_user_139": [
+        2,
+        9,
+        4,
+        0,
+        7,
+        6,
+        5,
+        1,
+        3,
+        8
+      ]
+    },
+    "average_ranks": [
+      5.7,
+      3.933333333333333,
+      7.933333333333334,
+      5.3,
+      5.233333333333333,
+      3.7333333333333334,
+      5.0,
+      5.6,
+      5.766666666666667,
+      6.8
+    ],
+    "aggregations": {
+      "borda_count": {
+        "ranking": [
+          5,
+          1,
+          6,
+          4,
+          3,
+          7,
+          0,
+          8,
+          9,
+          2
+        ],
+        "winner_idx": 5
+      },
+      "plurality": {
+        "ranking": [
+          1,
+          0,
+          3,
+          8,
+          6,
+          2,
+          4,
+          5,
+          7,
+          9
+        ],
+        "winner_idx": 1
+      },
+      "copeland": {
+        "ranking": [
+          1,
+          5,
+          3,
+          4,
+          6,
+          8,
+          0,
+          7,
+          9,
+          2
+        ],
+        "winner_idx": 1
+      },
+      "instant_runoff": {
+        "ranking": [
+          1,
+          5,
+          3,
+          6,
+          4,
+          8,
+          0,
+          7,
+          9,
+          2
+        ],
+        "winner_idx": 1
+      }
+    },
+    "config": {
+      "k_responses": 5,
+      "m_voters": 10,
+      "methods": [
+        "borda_count",
+        "plurality",
+        "copeland",
+        "instant_runoff"
+      ],
+      "sampling": "per_group",
+      "sampling_config": {
+        "per_group_counts": {
+          "16C": 10,
+          "20C": 10,
+          "original": 10
+        }
+      },
+      "jury_sources": [
+        {
+          "label": "16C",
+          "count": null
+        },
+        {
+          "label": "20C",
+          "count": null
+        },
+        {
+          "label": "original",
+          "count": 10
+        }
+      ],
+      "seed": 42,
+      "inference_llm": null
+    }
+  }
+]

@@ -1,28 +1,20 @@
 # Fork notes
 
-This is a fork of [facebookresearch/LoRe](https://github.com/facebookresearch/LoRe) used for a fellowship application exploring interpretability of personalized reward model bases on the PRISM dataset.
+Originally forked from [facebookresearch/LoRe](https://github.com/facebookresearch/LoRe) to experiment with reproducing Rachel Freedman's PRISM Figure 2. The Meta LoRe source files have since been removed; the surviving content is:
 
-## Changes from upstream
+- **`apa/`** — Rachel Freedman's APA code (from the anonymous repo linked in her paper), used unmodified.
+- **`plot_combined_heatmap.py`** — small wrapper that calls her `fig_user_weights_grid` (no new plot logic) and adds one extra panel showing all 182 PRISM users from her published `W_seen_K8.pt`.
 
-- **`PRISM/prepare.py`**: removed the `IPython.core.ultratb` exception hook (lines 18–20 in upstream). It's an interactive-debugger hook that doesn't help in headless / Colab runs and emits noisy tracebacks when something goes wrong. No functional change.
-- **`.gitignore`**: added. Excludes `.env`, generated data (`PRISM/data/`, `*.pkl`, `*.parquet`, `*.safetensors`), Python caches, and trained checkpoints. The repo no longer accidentally tracks the ~500 MB PRISM JSONLs or the ~16 GB embedding files when you run the pipeline.
-- **`NOTES.md`**: this file.
+## Changes from upstream LoRe
 
-No changes to the LoRe algorithm itself (`utils.py`), the embedding script (`PRISM/generate-prism-embeddings.py`), or the training script (`PRISM/train_basis.py`). Everything upstream still runs.
+- Removed `PRISM/`, `PersonalLLM/`, `RedditTLDR/`, `utils.py`, `requirements.txt`, `README.md`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md` — we no longer use Meta's training code; Rachel's `apa/` package supersedes it for our purpose (reproducing her published heatmap from her published checkpoints).
+- Kept `LICENSE` — applies to the historical git history.
 
-## How to use this fork
+## Why not just use her published code as-is?
 
-In Colab (after setting `HF_TOKEN` as a notebook secret):
+Two things her code does not do out of the box on a fresh machine:
 
-```python
-!git clone https://github.com/YOUR_USERNAME/LoRe.git
-%cd LoRe/PRISM
-!python prepare.py                       # downloads PRISM, builds train/test parquets
-!python generate-prism-embeddings.py     # embeds via Skywork-Reward-Llama-3.1-8B (~45 min on A100)
-```
+1. `apa.config.MODELS_DIR` points to `/nas/XXXX-9/XXXX-1/APA/models/`, which doesn't exist outside her cluster. `plot_combined_heatmap.py` monkey-patches `MODELS_DIR` to point at the bundled `apa/experiments/checkpoints/` folder so her `fig_user_weights_grid` can find the checkpoints.
+2. She publishes the **top-panel** figure but not the larger-population view of her PRISM W matrix. The bottom panel of our script is that view: all 182 rows of her `W_seen_K8.pt`, sorted by dominant basis, same per-row normalisation and same Blues palette so the two panels are visually consistent.
 
-Then call `solve_regularized_simplex` from `utils.py` directly to train a LoRe basis at your chosen K and extract the `W`, `V` matrices for analysis (the upstream `train_basis.py` only saves accuracy curves).
-
-## License
-
-Upstream LICENSE (CC-BY-NC 4.0) applies unchanged. See `LICENSE`.
+The only new plotting logic added by us is the bottom panel (~15 lines).

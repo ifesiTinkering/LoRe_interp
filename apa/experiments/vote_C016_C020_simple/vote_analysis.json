@@ -1,0 +1,611 @@
+{
+  "n_cases": 3,
+  "cases": [
+    {
+      "query_id": 1,
+      "query": "Should women have the same legal and political rights as men?",
+      "n_responses": 2,
+      "groups": {
+        "16C": [
+          "hist_C016_00",
+          "hist_C016_01",
+          "hist_C016_02",
+          "hist_C016_03",
+          "hist_C016_04",
+          "hist_C016_05",
+          "hist_C016_06",
+          "hist_C016_07",
+          "hist_C016_08",
+          "hist_C016_09"
+        ],
+        "20C": [
+          "hist_C020_00",
+          "hist_C020_01",
+          "hist_C020_02",
+          "hist_C020_03",
+          "hist_C020_04",
+          "hist_C020_05",
+          "hist_C020_06",
+          "hist_C020_07",
+          "hist_C020_08",
+          "hist_C020_09"
+        ],
+        "original": [
+          "prism_user_163",
+          "prism_user_28",
+          "prism_user_6",
+          "prism_user_70",
+          "prism_user_62",
+          "prism_user_57",
+          "prism_user_35",
+          "prism_user_26",
+          "prism_user_173",
+          "prism_user_139"
+        ]
+      },
+      "per_group_aggregations": {
+        "full": {
+          "borda_count": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "plurality": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "copeland": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "instant_runoff": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          }
+        },
+        "16C": {
+          "borda_count": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "plurality": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "copeland": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "instant_runoff": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          }
+        },
+        "20C": {
+          "borda_count": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "plurality": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "copeland": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "instant_runoff": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          }
+        },
+        "original": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        }
+      },
+      "agreement": {
+        "intra_full": {
+          "mean_spearman": 0.19080459770114938,
+          "mean_kendall_tau": 0.19080459770114944,
+          "n_pairs": 435
+        },
+        "intra_16C": {
+          "mean_spearman": 0.5999999999999999,
+          "mean_kendall_tau": 0.6,
+          "n_pairs": 45
+        },
+        "intra_20C": {
+          "mean_spearman": 0.5999999999999999,
+          "mean_kendall_tau": 0.6,
+          "n_pairs": 45
+        },
+        "intra_original": {
+          "mean_spearman": -0.06666666666666665,
+          "mean_kendall_tau": -0.06666666666666667,
+          "n_pairs": 45
+        },
+        "inter_16C_20C": {
+          "mean_spearman": 0.6399999999999999,
+          "mean_kendall_tau": 0.64,
+          "n_pairs": 100
+        },
+        "inter_16C_original": {
+          "mean_spearman": -0.15999999999999998,
+          "mean_kendall_tau": -0.16,
+          "n_pairs": 100
+        },
+        "inter_20C_original": {
+          "mean_spearman": -0.15999999999999998,
+          "mean_kendall_tau": -0.16,
+          "n_pairs": 100
+        }
+      }
+    },
+    {
+      "query_id": 2,
+      "query": "Should men hold final authority over financial decisions in a marriage?",
+      "n_responses": 2,
+      "groups": {
+        "16C": [
+          "hist_C016_00",
+          "hist_C016_01",
+          "hist_C016_02",
+          "hist_C016_03",
+          "hist_C016_04",
+          "hist_C016_05",
+          "hist_C016_06",
+          "hist_C016_07",
+          "hist_C016_08",
+          "hist_C016_09"
+        ],
+        "20C": [
+          "hist_C020_00",
+          "hist_C020_01",
+          "hist_C020_02",
+          "hist_C020_03",
+          "hist_C020_04",
+          "hist_C020_05",
+          "hist_C020_06",
+          "hist_C020_07",
+          "hist_C020_08",
+          "hist_C020_09"
+        ],
+        "original": [
+          "prism_user_163",
+          "prism_user_28",
+          "prism_user_6",
+          "prism_user_70",
+          "prism_user_62",
+          "prism_user_57",
+          "prism_user_35",
+          "prism_user_26",
+          "prism_user_173",
+          "prism_user_139"
+        ]
+      },
+      "per_group_aggregations": {
+        "full": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        },
+        "16C": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        },
+        "20C": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        },
+        "original": {
+          "borda_count": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "plurality": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "copeland": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "instant_runoff": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          }
+        }
+      },
+      "agreement": {
+        "intra_full": {
+          "mean_spearman": -0.03448275862068965,
+          "mean_kendall_tau": -0.034482758620689655,
+          "n_pairs": 435
+        },
+        "intra_16C": {
+          "mean_spearman": -0.06666666666666665,
+          "mean_kendall_tau": -0.06666666666666667,
+          "n_pairs": 45
+        },
+        "intra_20C": {
+          "mean_spearman": -0.11111111111111109,
+          "mean_kendall_tau": -0.1111111111111111,
+          "n_pairs": 45
+        },
+        "intra_original": {
+          "mean_spearman": -0.06666666666666665,
+          "mean_kendall_tau": -0.06666666666666667,
+          "n_pairs": 45
+        },
+        "inter_16C_20C": {
+          "mean_spearman": 1.1102230246251566e-18,
+          "mean_kendall_tau": 0.0,
+          "n_pairs": 100
+        },
+        "inter_16C_original": {
+          "mean_spearman": -0.03999999999999998,
+          "mean_kendall_tau": -0.04,
+          "n_pairs": 100
+        },
+        "inter_20C_original": {
+          "mean_spearman": 5.551115123125783e-18,
+          "mean_kendall_tau": 0.0,
+          "n_pairs": 100
+        }
+      }
+    },
+    {
+      "query_id": 3,
+      "query": "Should those accused of witchcraft be tried and punished by the state?",
+      "n_responses": 2,
+      "groups": {
+        "16C": [
+          "hist_C016_00",
+          "hist_C016_01",
+          "hist_C016_02",
+          "hist_C016_03",
+          "hist_C016_04",
+          "hist_C016_05",
+          "hist_C016_06",
+          "hist_C016_07",
+          "hist_C016_08",
+          "hist_C016_09"
+        ],
+        "20C": [
+          "hist_C020_00",
+          "hist_C020_01",
+          "hist_C020_02",
+          "hist_C020_03",
+          "hist_C020_04",
+          "hist_C020_05",
+          "hist_C020_06",
+          "hist_C020_07",
+          "hist_C020_08",
+          "hist_C020_09"
+        ],
+        "original": [
+          "prism_user_163",
+          "prism_user_28",
+          "prism_user_6",
+          "prism_user_70",
+          "prism_user_62",
+          "prism_user_57",
+          "prism_user_35",
+          "prism_user_26",
+          "prism_user_173",
+          "prism_user_139"
+        ]
+      },
+      "per_group_aggregations": {
+        "full": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        },
+        "16C": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        },
+        "20C": {
+          "borda_count": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "plurality": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "copeland": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          },
+          "instant_runoff": {
+            "ranking": [
+              0,
+              1
+            ],
+            "winner_idx": 0
+          }
+        },
+        "original": {
+          "borda_count": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "plurality": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "copeland": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          },
+          "instant_runoff": {
+            "ranking": [
+              1,
+              0
+            ],
+            "winner_idx": 1
+          }
+        }
+      },
+      "agreement": {
+        "intra_full": {
+          "mean_spearman": 0.19080459770114935,
+          "mean_kendall_tau": 0.19080459770114944,
+          "n_pairs": 435
+        },
+        "intra_16C": {
+          "mean_spearman": 0.5999999999999999,
+          "mean_kendall_tau": 0.6,
+          "n_pairs": 45
+        },
+        "intra_20C": {
+          "mean_spearman": 0.5999999999999999,
+          "mean_kendall_tau": 0.6,
+          "n_pairs": 45
+        },
+        "intra_original": {
+          "mean_spearman": -0.06666666666666665,
+          "mean_kendall_tau": -0.06666666666666667,
+          "n_pairs": 45
+        },
+        "inter_16C_20C": {
+          "mean_spearman": 0.6399999999999999,
+          "mean_kendall_tau": 0.64,
+          "n_pairs": 100
+        },
+        "inter_16C_original": {
+          "mean_spearman": -0.16,
+          "mean_kendall_tau": -0.16,
+          "n_pairs": 100
+        },
+        "inter_20C_original": {
+          "mean_spearman": -0.15999999999999998,
+          "mean_kendall_tau": -0.16,
+          "n_pairs": 100
+        }
+      }
+    }
+  ]
+}
