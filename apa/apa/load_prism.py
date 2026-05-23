@@ -773,9 +773,22 @@ def _generate_embeddings(dataset, model, tokenizer, device: str, output_path: Pa
     dataset_size = len(dataset)
     _log(f"Generating embeddings for {dataset_size} examples...")
     start_time = time.time()
-    embeddings_data = []
+
+    # CHECKPOINT PATCH (ifesiTinkering fork): resume from partial save on disconnect.
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    partial_path = output_path.with_suffix(".partial.pt")
+    if partial_path.exists():
+        embeddings_data = torch.load(partial_path, weights_only=False)
+        resume_from = len(embeddings_data)
+        _log(f"Resuming from checkpoint {partial_path}: {resume_from}/{dataset_size} already done")
+    else:
+        embeddings_data = []
+        resume_from = 0
+    CHECKPOINT_EVERY = 200
 
     for idx, entry in enumerate(tqdm(dataset, desc="Generating embeddings", total=dataset_size), 1):
+        if idx <= resume_from:
+            continue
         if not isinstance(entry, dict):
             entry = dict(entry)
         else:
@@ -839,6 +852,11 @@ def _generate_embeddings(dataset, model, tokenizer, device: str, output_path: Pa
 
         embeddings_data.append(entry)
 
+        # CHECKPOINT PATCH: periodic partial save so a Colab disconnect at hour N doesn't lose hours of work.
+        if idx % CHECKPOINT_EVERY == 0:
+            torch.save(embeddings_data, partial_path)
+            _log(f"Checkpoint saved at {idx}/{dataset_size} -> {partial_path}")
+
         if idx % 100 == 0 and device.startswith("cuda"):
             torch.cuda.empty_cache()
 
@@ -854,6 +872,11 @@ def _generate_embeddings(dataset, model, tokenizer, device: str, output_path: Pa
     output_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(embeddings_data, output_path)
     _log(f"Saved embeddings to {output_path}")
+
+    # CHECKPOINT PATCH: clean up partial after final save succeeds.
+    if partial_path.exists():
+        partial_path.unlink()
+        _log(f"Removed partial checkpoint {partial_path}")
 
     return embeddings_data
 
